@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML Academy: Кэт энерджи</title>
+</head>
+<body>
+  <header class="page-header">
+    <a class="page-header__logo">
+      <img class="page-header__logo-image" src="img/logo.jpg" width="191" height="39" alt="Cat energy">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button">Open menu</button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a href="index.html">Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a href="catalog.html">Каталог продукции</a>
+          </li>
+          <li class="site-list__item site-list__item--active">
+            <a>Подбор программы</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main class="page-program">
+    <header class="program-header">
+      <h1 class="program-header__header">Подбор программы</h1>
+      <p class="program-header__title">Заполните анкету и мы подберем
+        программу питания для вашего кота</p>
+      <small class="questionary__legend--top"> <sup>*</sup> — Обязательные поля</small>
+    </header>
+    <section class="questionary">
+      <div class="questionary__cat cat-description">
+        <label class="cat-description__label" for="cat-name">Имя:*</label>
+        <input class="cat-description__value" type="text" id="cat-name" value="Барсик">
+        <label class="cat-description__label" for="cat-weight">Вес (кг):*</label>
+        <input class="cat-description__value" type="text" id="cat-weight" value="7">
+        <label class="cat-description__label" for="cat-age">Возраст (лет):</label>
+        <input class="cat-description__value" type="text" id="cat-age" value="7">
+        <ul class="cat-description__propgram-list propgram-list">
+          <li class="program-list__item program-list__item--active">
+            <input type="radio" class="program-list__item__radio" name="program-group" id="program-loss" checked>
+            <label for="program-loss" class="program-list__label">Похудение</label>
+          </li>
+          <li class="program-list__item">
+            <input type="radio" class="program-list__item__radio" name="program-group" id="program-gain">
+            <label for="program-gain" class="program-list__label ">Набор массы</label>
+          </li>
+          <li class="program-list__item__item">
+            <input type="radio" class="program-list__item__radio" name="program-group" id="program-unknown">
+            <label for="program-unknown" class="program-list__label ">Не знаю (Нужен ваш совет)</label>
+          </li>
+        </ul>
+      </div>
+      <article class="questionary__contact owner-contact">
+        <h2 class="owner-contact__header">Контактные данные
+          (владельца кота)</h2>
+        <label class="owner-contact__label" for="owner-email">E-mail:*</label>
+        <input class="owner-contact__value" type="text" id="owner-email" value="kuklachev@gmail.com">
+        <label class="owner-contact__label" for="owner-phone">Телефон:*</label>
+        <input class="owner-contact__value" type="text" id="owner-phone" value="8 (960) 900-60-90">
+      </article>
+      <article class="questionary__comment owner-comment">
+        <h2 class="owner-comment__header">Комментарий</h2>
+        <input class="owner-comment__value" type="text" id="owner-comment" value="Расскажите обо всех повадках кота">
+      </article>
+      <article class="questionary__additional program-additional">
+        <h2 class="program-additional__header">Дополнительно</h2>
+        <ul class="program-additional__list add-list">
+          <li class="add-list__item add-list__item--active">
+            <input type="checkbox" class="add-list__checkbox" id="add-list-shugar" checked>
+            <label for="add-list-shuga" class="add-list__label ">Сахарозаменитель</label>
+          </li>
+          <li class="add-list__item">
+            <input type="checkbox" class="add-list__checkbox" id="add-list-water">
+            <label for="add-list-water" class="add-list__label ">Питьевая вода</label>
+          </li>
+          <li class="add-list__item">
+            <input type="checkbox" class="add-list__checkbox" id="add-list-milk">
+            <label for="add-list-milk" class="add-list__label ">Молоко</label>
+          </li>
+          <li class="add-list__item">
+            <input type="checkbox" class="add-list__checkbox" id="add-list-vitamins">
+            <label for="add-list-vitamins" class="add-list__label ">Витамины</label>
+          </li>
+        </ul>
+      </article>
+      <a href="https://echo.htmlacademy.ru" class="button">Отправить заявку</a>
+      <small class="questionary__legend--bottom"> <sup>*</sup> — Обязательные поля</small>
+
+    </section>
+    <section class="location">
+      <h2 class="location__header">приглашаем
+        к сотрудничеству
+        дилеров!</h2>
+      <span class="location__address">ул. Большая Конюшенная, д. 19/8
+          Санкт-Петербург</span>
+      <div class="location__map">Карта</div>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <a class="page-footer__logo">
+        Cat energy
+      </a>
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <b class="copyright__text">HTML Academy</b>
+        <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy logo</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
