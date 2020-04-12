@@ -1,0 +1,21 @@
+.good-card {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.good-card__image-wrapper {
+  width: 140px;
+  height: 144px;
+}
+
+.good-card__description-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.good-card__title {
+  margin-top: 25px;
+  margin-bottom: 12px;
+  margin-right: 30%;
+}

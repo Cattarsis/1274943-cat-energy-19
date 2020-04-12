@@ -1,0 +1,73 @@
+.program {
+  background-color: #f2f2f2;
+  padding: 12px 21px;
+  position: relative;
+}
+
+.program__description {
+  border-bottom: 1px solid $line-separate-color;
+  padding-bottom: 23px;
+}
+
+.program__catalog-link {
+  position: relative;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 16px;
+  color: #111111;
+  text-decoration: none;
+  margin-top: 20px;
+  margin-bottom: 10px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: -37px;
+    top: 7px;
+    background-image: url("../img/icon-right-arrow-long.svg");
+    background-repeat: no-repeat;
+    width: 25px;
+    height: 12px;
+  }
+}
+
+.program__title {
+  margin-left: 71px;
+  color: #111111;
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    display: inline-block;
+    left: -69px;
+    top: -7px;
+    content: "";
+    border: 25px #68b738 solid;
+    border-radius: 50%;
+  }
+
+  &--loss::after {
+    content: "";
+    position: absolute;
+    left: -61px;
+    top: -9px;
+    background-image: url("../img/icon-cat-slim.svg");
+    background-repeat: no-repeat;
+    width: 35px;
+    height: 49px;
+  }
+
+  &--gain::after {
+    content: "";
+    position: absolute;
+    left: -80px;
+    top: 5px;
+    background-image: url("../img/icon-cat-pro.svg");
+    background-repeat: no-repeat;
+    width: 67px;
+    height: 28px;
+  }
+}

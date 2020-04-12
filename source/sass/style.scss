@@ -1,0 +1,33 @@
+@font-face {
+  font-family: "Oswald-Regular";
+  src: url("../fonts/oswaldregular.woff2") format("woff2"),
+    url("../fonts/oswaldregular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@import "variable.scss";
+@import "mixin.scss";
+@import "body.scss";
+@import "visually-hidden.scss";
+@import "page-header.scss";
+@import "main-nav.scss";
+@import "heading.scss";
+@import "banner.scss";
+@import "description.scss";
+@import "button.scss";
+@import "program.scss";
+@import "programs.scss";
+@import "inner-title.scss";
+@import "features.scss";
+@import "page-footer.scss";
+@import "social.scss";
+@import "copyright.scss";
+@import "subtitle";
+@import "icon.scss";
+@import "goods.scss";
+@import "page-name.scss";
+@import "good-card.scss";
+@import "good-title.scss";
+@import "option-table.scss";
+

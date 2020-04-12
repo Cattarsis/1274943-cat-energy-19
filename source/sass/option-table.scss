@@ -1,0 +1,21 @@
+.option-table {
+  display: flex;
+  flex-direction: column;
+}
+
+.option-table__row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.option-table__cell {
+  font-size: 12px;
+  line-height: 16px;
+  color: #444444;
+  font-family: "ArialMT";
+
+  &--right {
+    text-align: right;
+  }
+}
+

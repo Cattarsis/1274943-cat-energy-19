@@ -1,0 +1,12 @@
+.icon {
+  fill: #666666;
+
+  &:hover {
+    fill: #68b738;
+  }
+
+  &:active {
+    fill: #68b738;
+    opacity: 0.3;
+  }
+}
