@@ -2,11 +2,11 @@
   fill: #666666;
 
   &:hover {
-    fill: #68b738;
+    fill: $button-background-color;
   }
 
   &:active {
-    fill: #68b738;
+    fill: $button-background-color;
     opacity: 0.3;
   }
 }

@@ -1,12 +1,13 @@
 .program {
-  background-color: #f2f2f2;
-  padding: 12px 21px;
+  background-color: $alternate-background-color;
+  padding: 12px 21px 22px;
   position: relative;
 }
 
 .program__description {
   border-bottom: 1px solid $line-separate-color;
   padding-bottom: 23px;
+  margin-bottom: 20px;
 }
 
 .program__catalog-link {
@@ -14,10 +15,12 @@
   text-transform: uppercase;
   font-size: 16px;
   line-height: 16px;
-  color: #111111;
+  color: $heading-font-color;
   text-decoration: none;
-  margin-top: 20px;
-  margin-bottom: 10px;
+  // margin-top: 20px;
+  // margin-bottom: 10px;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: normal;
 
   &::after {
     content: "";
@@ -33,19 +36,21 @@
 
 .program__title {
   margin-left: 71px;
-  color: #111111;
+  color: $heading-font-color;
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
   position: relative;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: normal;
 
   &::before {
     position: absolute;
-    display: inline-block;
+    display: block;
     left: -69px;
     top: -7px;
     content: "";
-    border: 25px #68b738 solid;
+    border: 25px $button-background-color solid;
     border-radius: 50%;
   }
 

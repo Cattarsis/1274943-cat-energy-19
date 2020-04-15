@@ -1,7 +1,7 @@
 .goods {
   border: none;
-  display: flex;
-  flex-direction: column;
+  // display: flex;
+  // flex-direction: column;
   margin: 0;
   padding-left: 20px;
   padding-right: 20px;
@@ -10,8 +10,8 @@
 
 .goods__list {
   @include list-reset;
-  display: flex;
-  flex-direction: column;
+  // display: flex;
+  // flex-direction: column;
 }
 
 .goods__item {
@@ -23,6 +23,7 @@
   position: relative;
   border-bottom: $line-separate-color solid 1px;
   padding-bottom: 25px;
+  padding-top: 1px;
 
   &::after {
     content: "";
@@ -46,7 +47,7 @@
   text-align: center;
   font-size: 12px;
   line-height: 16px;
-  columns: #444444;
+  color: $main-font-color;
   margin-top: 11px;
   margin-bottom: 22px;
 }

@@ -1,10 +1,12 @@
 .heading {
   font-size: 36px;
   line-height: 36px;
-  color: white;
+  color: $heading-font-inverse-color;
   text-align: center;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: normal;
 
   &--black {
-    color: #111111;
+    color: $heading-font-color;
   }
 }

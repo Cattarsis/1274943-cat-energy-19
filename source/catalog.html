@@ -14,7 +14,7 @@
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
-      <div class="main-nav__wrapper visually-hidden">
+      <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item ">
             <a href="index.html">Главная</a>
@@ -33,8 +33,8 @@
     <div class="page-name">
       <h1 class="page-name__title heading heading--black">Каталог продукции</h1>
     </div>
-    <fieldset class="goods">
-      <legend class="visually-hidden">Товары</legend>
+    <section class="goods">
+      <h2 class="visually-hidden">Товары</h2>
       <ul class="goods__list">
         <li class="goods__item good-card">
           <div class="good-card__image-wrapper">
@@ -203,11 +203,11 @@
         <p class="goods__visible-subtitle">На самом деле вкусов гораздо больше!</p>
         <a href="#" class="goods__visible-all button button--gray">Показать все</a>
       </div>
-    </fieldset>
-    <fieldset class="fieldset">
-      <legend class="fieldset__legend section-title">Дополнительные товары</legend>
-      <ul class="fieldset__list goods-list">
-        <li class="goods-item add-items">
+    </section>
+    <section class="goods">
+      <h2 class="goods__title section-title">Дополнительные товары</h2>
+      <ul class="goods__list goods-list">
+        <li class="goods__item add-items">
           <h3 class="add-items__title">Сахарозаменитель</h3>
           <div class="add-items__option">
             <span class="add-items__item">1 упаковка (100 г)</span>
@@ -215,7 +215,7 @@
           </div>
           <a href="#" class="button">Заказать</a>
         </li>
-        <li class="goods-item add-items">
+        <li class="goods__item add-items">
           <h3 class="add-items__title">Питьевая вода</h3>
           <div class="add-items__option">
             <span class="add-items__item">5 литров</span>
@@ -223,7 +223,7 @@
           </div>
           <a href="#" class="button">Заказать</a>
         </li>
-        <li class="goods-item add-items">
+        <li class="goods__item add-items">
           <h3 class="add-items__title">Молоко</h3>
           <div class="add-items__option">
             <span class="add-items__item">1 литр</span>
@@ -231,7 +231,7 @@
           </div>
           <a href="#" class="button">Заказать</a>
         </li>
-        <li class="goods-item add-items">
+        <li class="goods__item add-items">
           <h3 class="add-items__title">Витамины</h3>
           <div class="add-items__option">
             <span class="add-items__item">1 упаковка (30 г)</span>
@@ -241,7 +241,7 @@
         </li>
       </ul>
       <img src="#" class="fieldset__promo_image" width="280" height="289" alt="Изображение товара">
-    </fieldset>
+    </section>
     <section class="location">
       <h2 class="location__title">приглашаем
         к сотрудничеству
