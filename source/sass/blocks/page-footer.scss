@@ -1,0 +1,30 @@
+.page-footer {
+  background-color: $alternate-background-color;
+}
+
+.page-footer__wrapper {
+  display: flex;
+  flex-direction: column;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.page-footer__logo {
+  background-image: url("../img/logo-footer.svg");
+  background-position: 50% 50%;
+  background-size: 128px 24px;
+  background-repeat: no-repeat;
+  flex-basis: 94px;
+}
+
+.page-footer__social {
+  flex-basis: 62px;
+  border-top: $line-separate-color solid 1px;
+  border-bottom: $line-separate-color solid 1px;
+  padding-left: 73px;
+  padding-right: 82px;
+}
+
+.page-footer__copyright {
+  flex-basis: 78px;
+}

@@ -1,0 +1,30 @@
+.social {
+  display: flex;
+}
+
+.social__list {
+  @include list-reset;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.social__link {
+  display: flex;
+
+  &--vkontakte {
+    width: 22px;
+    height: 12px;
+  }
+
+  &--instagram {
+    width: 17px;
+    height: 17px;
+  }
+
+  &--facebook {
+    width: 10px;
+    height: 19px;
+  }
+}

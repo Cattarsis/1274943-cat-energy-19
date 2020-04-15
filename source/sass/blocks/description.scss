@@ -1,0 +1,14 @@
+.description {
+  font-size: 14px;
+  line-height: 18px;
+  color: $main-font-color;
+  font-family: "ArialMT", sans-serif;
+  margin: 0;
+
+  &--center {
+    color: $heading-font-inverse-color;
+    line-height: 14px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
