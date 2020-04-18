@@ -1,0 +1,9 @@
+.programs__list {
+  @include list-reset;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.programs__item {
+  margin-bottom: 22px;
+}

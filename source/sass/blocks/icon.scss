@@ -1,0 +1,12 @@
+.icon {
+  fill: #666666;
+
+  &:hover {
+    fill: $button-background-color;
+  }
+
+  &:active {
+    fill: $button-background-color;
+    opacity: 0.3;
+  }
+}

@@ -1,0 +1,78 @@
+.program {
+  background-color: $alternate-background-color;
+  padding: 12px 21px 22px;
+  position: relative;
+}
+
+.program__description {
+  border-bottom: 1px solid $line-separate-color;
+  padding-bottom: 23px;
+  margin-bottom: 20px;
+}
+
+.program__catalog-link {
+  position: relative;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 16px;
+  color: $heading-font-color;
+  text-decoration: none;
+  // margin-top: 20px;
+  // margin-bottom: 10px;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: normal;
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: -37px;
+    top: 7px;
+    background-image: url("../img/icon-right-arrow-long.svg");
+    background-repeat: no-repeat;
+    width: 25px;
+    height: 12px;
+  }
+}
+
+.program__title {
+  margin-left: 71px;
+  color: $heading-font-color;
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+  position: relative;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: normal;
+
+  &::before {
+    position: absolute;
+    display: block;
+    left: -69px;
+    top: -7px;
+    content: "";
+    border: 25px $button-background-color solid;
+    border-radius: 50%;
+  }
+
+  &--loss::after {
+    content: "";
+    position: absolute;
+    left: -61px;
+    top: -9px;
+    background-image: url("../img/icon-cat-slim.svg");
+    background-repeat: no-repeat;
+    width: 35px;
+    height: 49px;
+  }
+
+  &--gain::after {
+    content: "";
+    position: absolute;
+    left: -80px;
+    top: 5px;
+    background-image: url("../img/icon-cat-pro.svg");
+    background-repeat: no-repeat;
+    width: 67px;
+    height: 28px;
+  }
+}

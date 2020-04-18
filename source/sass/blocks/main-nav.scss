@@ -1,0 +1,22 @@
+.main-nav {
+  background-image: url("../img/index-background-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 16px;
+}
+
+.main-nav__toggle {
+  position: absolute;
+  right: 19px;
+  top: 15px;
+  width: 24px;
+  height: 18px;
+  background-color: $heading-font-inverse-color;
+  border: none;
+  background-image: url("../img/icon-mobile-menu.svg");
+}
+
+.main-nav__wrapper {
+  display: none;
+}

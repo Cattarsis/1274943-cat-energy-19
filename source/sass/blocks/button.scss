@@ -1,0 +1,28 @@
+.button {
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $heading-font-inverse-color;
+  background-color: $button-background-color;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: block;
+  border: none;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: normal;
+
+  &--small-text {
+    font-size: 14px;
+    line-height: 18px;
+    padding-top: 14px;
+    padding-bottom: 11px;
+  }
+
+  &--gray {
+    background-color: $alternate-background-color;
+    color: $main-font-color;
+  }
+}
