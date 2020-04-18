@@ -26,3 +26,19 @@
     color: $main-font-color;
   }
 }
+
+@media (min-width: $width-tablet) {
+  .button {
+    font-size: 20px;
+    line-height: 20px;
+    width: 100%;
+
+    &--small-text {
+      width: 245px;
+      font-size: 20px;
+      line-height: 20px;
+      padding-top: 16px;
+      padding-bottom: 16px;
+    }
+  }
+}

@@ -7,4 +7,33 @@
   margin-left: 20px;
   margin-top: 11px;
   margin-bottom: 15px;
+  background-image: url("../../img/logo-mobile.svg");
+  background-repeat: no-repeat;
+  width: 191px;
+  height: 39px;
+}
+
+@media (min-width: $width-tablet) and (max-width: $width-desktop) {
+  .page-header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .page-header__logo {
+    position: absolute;
+    background-image: url("../../img/logo-tablet.svg");
+    width: 174px;
+    height: 59px;
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .page-header__logo {
+    position: absolute;
+    top: 53px;
+    left: 90px;
+    background-image: url("../../img/logo-desktop.svg");
+    width: 174px;
+    height: 59px;
+  }
 }

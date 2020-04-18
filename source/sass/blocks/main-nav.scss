@@ -20,3 +20,46 @@
 .main-nav__wrapper {
   display: none;
 }
+
+@media (min-width: $width-tablet)/* and (max-width: $width-desktop)*/ {
+  .main-nav__wrapper {
+    display: block;
+    width: 100%;
+    color: $main-menu-text-color;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav {
+    background-image: none;
+    width: 100%;
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .main-nav {
+    background-image: url("../../img/index-background-desktop@1x.jpg");
+    background-position: top right;
+    padding-top: 50px;
+    margin-top: 0;
+    min-height: 696px;
+    padding-right: 0;
+    padding-left: 0;
+
+    &--inner {
+      background-image: none;
+      min-height: unset;
+    }
+  }
+
+  .main-nav__wrapper {
+    margin-bottom: 37px;
+  }
+
+  .main-nav__list {
+    margin-top: 27px;
+    padding-right: 110px;
+  }
+}

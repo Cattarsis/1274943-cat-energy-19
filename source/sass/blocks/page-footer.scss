@@ -28,3 +28,35 @@
 .page-footer__copyright {
   flex-basis: 78px;
 }
+
+@media (min-width: $width-tablet) {
+  .page-footer__wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 55px;
+    padding-bottom: 55px;
+  }
+
+  .page-footer__logo {
+    flex-basis: 152px;
+  }
+
+  .page-footer__social {
+    flex-basis: 100px;
+    border: none;
+  }
+
+  .page-footer__copyright {
+    flex-basis: 150px;
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .page-footer__wrapper {
+    width: 1220px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}

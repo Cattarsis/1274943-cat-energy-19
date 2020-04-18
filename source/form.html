@@ -7,20 +7,18 @@
 </head>
 <body>
   <header class="page-header">
-    <a class="page-header__logo">
-      <img class="page-header__logo-image" src="img/logo-mobile.svg" width="191" height="39" alt="Cat energy">
-    </a>
-    <nav class="main-nav">
+    <a class="page-header__logo"></a>
+    <nav class="main-nav main-nav--inner">
       <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
-          <li class="site-list__item">
+          <li class="site-list__item site-list__item--black">
             <a href="index.html">Главная</a>
           </li>
-          <li class="site-list__item">
+          <li class="site-list__item site-list__item--black">
             <a href="catalog.html">Каталог продукции</a>
           </li>
-          <li class="site-list__item site-list__item--active">
+          <li class="site-list__item site-list__item--black site-list__item--active">
             <a>Подбор программы</a>
           </li>
         </ul>
@@ -53,23 +51,23 @@
 
         <fieldset class="form__fieldset">
           <legend class="visually-hidden">Выбор программы</legend>
-          <ul class=" form__list">
-            <li class=" form__list-item radio">
+          <ul class="form__fieldset-list">
+            <li class="form__fieldset-list-item radio">
               <input class="radio__input visually-hidden" type="radio"  name="program" value="program-loss" id="program-loss" checked>
               <label class="radio__label" for="program-loss">Похудение</label>
             </li>
-            <li class=" form__list-item radio">
+            <li class="form__fieldset-list-item radio">
               <input class="radio__input visually-hidden" type="radio" name="program" value="program-gain" id="program-gain">
               <label class="radio__label" for="program-gain">Набор массы</label>
             </li>
-            <li class=" form__list-item radio">
+            <li class="form__fieldset-list-item radio">
               <input class="radio__input visually-hidden" type="radio" name="program" value="program-unknown" id="program-unknown">
               <label class="radio__label" for="program-unknown">Не знаю (Нужен ваш совет)</label>
             </li>
           </ul>
         </fieldset>
       <fieldset class="form__fieldset">
-        <legend class=" form__legend section-title">Контактные данные
+        <legend class="form__fieldset-legend section-title">Контактные данные
           (владельца кота)</legend>
 
         <p class="form__field-wrapper">
@@ -82,25 +80,25 @@
         </p>
       </fieldset>
       <fieldset class="form__fieldset">
-        <legend class=" form__legend section-title">Комментарий</legend>
+        <legend class="form__fieldset-legend section-title">Комментарий</legend>
         <textarea class="form__input form__input--textarea" id="owner-comment" name="owner-comment" placeholder="Расскажите обо всех повадках кота"></textarea>
       </fieldset>
       <fieldset class="form__fieldset">
-        <legend class=" form__legend section-title">Дополнительно</legend>
-        <ul class=" form__list">
-          <li class=" form__list-item checkbox">
+        <legend class="form__fieldset-legend section-title">Дополнительно</legend>
+        <ul class="form__fieldset-list">
+          <li class="form__fieldset-list-item checkbox">
             <input class="checkbox__input" type="checkbox" id="add-shugar" name="add-shugar" checked>
             <label class="checkbox__label" for="add-shugar">Сахарозаменитель</label>
           </li>
-          <li class=" form__list-item checkbox">
+          <li class="form__fieldset-list-item checkbox">
             <input class="checkbox__input" type="checkbox" id="add-water" name="add-water">
             <label class="checkbox__label" for="add-water">Питьевая вода</label>
           </li>
-          <li class=" form__list-item checkbox">
+          <li class="form__fieldset-list-item checkbox">
             <input class="checkbox__input" type="checkbox" id="add-milk" name="add-milk">
             <label class="checkbox__label" for="add-milk">Молоко</label>
           </li>
-          <li class=" form__list-item checkbox">
+          <li class="form__fieldset-list-item checkbox">
             <input class="checkbox__input" type="checkbox" id="add-vitamins" name="add-vitamins">
             <label class="checkbox__label" for="add-vitamins">Витамины</label>
           </li>
