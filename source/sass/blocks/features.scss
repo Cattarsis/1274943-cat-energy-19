@@ -1,6 +1,11 @@
-.features {
-  padding-left: 20px;
-  padding-right: 20px;
+// .features {
+//   // padding-left: 20px;
+//   // padding-right: 20px;
+//   // margin-top: -1px;
+// }
+
+.features__title {
+  margin-bottom: 28px;
 }
 
 .features__list {
@@ -12,14 +17,14 @@
 .features__item {
   position: relative;
   width: 100%;
-  margin-left: 78px;
+  margin-left: 80px;
   margin-bottom: 20px;
   min-height: 60px;
 
   &::before {
     content: "";
     position: absolute;
-    left: -78px;
+    left: -80px;
     width: 60px;
     height: 60px;
     background-color: $button-background-color;
@@ -47,29 +52,31 @@
 }
 
 .features__description {
-  padding-top: 5px;
+  padding-top: 2px;
 }
 
 @media (min-width: $width-tablet) {
-  .features {
-    margin-top: 51px;
-  }
+  // .features {
+  //   // margin-top: 46px;
+  //   // padding: 0 30px;
+  // }
 
   .features__title {
-    margin-bottom: 63px;
+    margin-bottom: 72px;
   }
 
   .features__list {
     flex-direction: row;
     flex-wrap: wrap;
     counter-reset: list 0;
+    justify-content: space-between;
   }
 
   .features__item {
-    width: 50%;
+    width: 46%;
     margin-left: 0;
-    margin-bottom: 90px;
-    padding-top: 117px;
+    margin-bottom: 132px;
+    padding-top: 110px;
 
     &::before {
       top: 0;
@@ -87,15 +94,18 @@
   }
 
   .features__description {
-    width: 244px;
+    width: 245px;
+    padding-top: 3px;
     //position: relative;
 
     &::before {
       position: absolute;
+      font-family: "Oswald", "Arial", sans-serif;
       z-index: -1;
-      right: 0;
-      top: 110px;
-      font-size: 280px;
+      left: 115px;
+      top: -40px;
+      font-size: 281px;
+      line-height: 281px;
       color: $alternate-background-color;
       content: counter(list);
       counter-increment: list;
@@ -104,11 +114,12 @@
 }
 
 @media (min-width: $width-desktop) {
-  .features {
-    margin-left: 110px;
-    margin-right: 110px;
-    padding: 0;
-  }
+  // .features {
+  //   // margin-left: 110px;
+  //   // margin-right: 110px;
+  //   padding: 0;
+  //   // margin-top: 41px;
+  // }
 
   .features__item {
     width: 20%;
@@ -119,7 +130,7 @@
   }
 
   .features__description {
-    width: 240px;
+    width: 245px;
     font-size: 16px;
     line-height: 24px;
   }

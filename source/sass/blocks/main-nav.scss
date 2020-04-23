@@ -1,15 +1,18 @@
 .main-nav {
-  background-image: url("../img/index-background-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin-top: 16px;
+  // background-image: url("../img/index-background-mobile@1x.jpg");
+  // background-repeat: no-repeat;
+  // padding-left: 20px;
+  // padding-right: 20px;
+  // margin-top: 16px;
+  padding-top: 11px;
+  position: relative;
+  min-height: 54px;
 }
 
 .main-nav__toggle {
   position: absolute;
-  right: 19px;
-  top: 15px;
+  right: 0;
+  top: 23px;
   width: 24px;
   height: 18px;
   background-color: $heading-font-inverse-color;
@@ -34,23 +37,28 @@
 
   .main-nav {
     background-image: none;
+    padding-top: 12px;
     width: 100%;
+    display: flex;
+  }
+
+  .main-nav__list {
+    // padding-right: 10px;
   }
 }
 
 @media (min-width: $width-desktop) {
   .main-nav {
-    background-image: url("../../img/index-background-desktop@1x.jpg");
-    background-position: top right;
-    padding-top: 50px;
+
+    padding-top: 53px;
     margin-top: 0;
-    min-height: 696px;
+    // min-height: 696px;
     padding-right: 0;
     padding-left: 0;
 
     &--inner {
       background-image: none;
-      min-height: unset;
+      min-height: auto;
     }
   }
 
@@ -59,7 +67,7 @@
   }
 
   .main-nav__list {
-    margin-top: 27px;
-    padding-right: 110px;
+    // margin-top: 23px;
+    // padding-right: 110px;
   }
 }

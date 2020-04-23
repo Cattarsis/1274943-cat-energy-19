@@ -9,8 +9,8 @@
 }
 
 .good-card__image-wrapper {
-  width: 140px;
-  height: 144px;
+  width: 50%;
+  // height: auto;
 
   &--add {
     background-image: url("../../img/icon-plus-mobile.svg");
@@ -29,7 +29,7 @@
   width: 50%;
 
   &--add {
-    width: unset;
+    width: auto;
   }
 }
 
@@ -39,7 +39,7 @@
   margin-right: 30%;
 
   &--add {
-    margin-right: unset;
+    margin-right: auto;
   }
 }
 
@@ -55,9 +55,9 @@
     align-items: center;
 
     &--borders {
-      width: 45%;
+
       border: $line-separate-color solid 1px;
-      background-color: unset;
+      background-color: auto;
     }
   }
 
@@ -98,5 +98,9 @@
     &--borders {
       width: 245px;
     }
+  }
+
+  .good-card__image-wrapper {
+    width: auto;
   }
 }

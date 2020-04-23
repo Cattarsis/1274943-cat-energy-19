@@ -1,19 +1,27 @@
 .banner {
-  padding-top: 1px;
+  // padding-top: 1px;
+  // background-image: url("../../img/index-background-mobile@1x.jpg");
+  // background-repeat: no-repeat;
+  // background-position: top left -10px;
+  padding-top: 29px;
 }
 
 .banner__title {
-  margin-top: 29px;
-  margin-bottom: 25px;
+  margin-top: 0;
+  margin-bottom: 19px;
 }
 
-// .banner__contain {
+.banner__contain {
+  margin-bottom: 29px;
 //   margin-left: 35px;
 //   margin-right: 35px;
-// }
+}
 
 .banner__image {
-  margin-top: 25px;
+  display: block;
+  // text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 
@@ -22,14 +30,14 @@
     background-image: url("../../img/index-can-tablet@1x.jpg");
     background-repeat: no-repeat;
     background-position: bottom;
-    min-height: 875px;
-    padding-left: 90px;
+    min-height: 860px;
+    padding-left: 80px;
     padding-right: 90px;
   }
 
   .banner__title {
     columns: $heading-font-color;
-    margin-top: 68px;
+    margin-top: 48px;
     margin-bottom: 33px;
   }
 
@@ -38,6 +46,7 @@
   }
 
   .banner__contain {
+    margin-top: 42px;
     margin-bottom: 48px;
   }
 }
@@ -45,16 +54,22 @@
 @media (min-width: $width-desktop) {
   .banner__title {
     width: 420px;
+    margin-top: 78px;
+    // margin-left: 81px;
+  }
+
+  .banner__contain {
+    margin-bottom: 50px;
   }
 
   .banner {
     background-image: url("../../img/index-can-desktop@1x.png");
-    background-position: top 0 left calc(50% + 120px);
+    background-position: top  left 68%;
     min-height: 499px;
-    padding-left: 0;
+    padding-left: 81px;
     padding-right: 0;
-    margin-left: auto;
-    margin-right: auto;
-    width: 1220px;
+    // margin-left: 110px;
+    // margin-right: 110px;
+    width: auto;
   }
 }

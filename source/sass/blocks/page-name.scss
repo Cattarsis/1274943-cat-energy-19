@@ -3,20 +3,24 @@
   border-top: $line-separate-color solid 1px;
 }
 
+.page-name__title {
+  margin: 0;
+}
+
 @media (min-width: $width-tablet) {
   .page-name {
     border: none;
   }
 
-  .page-name__title {
-    margin-top: 65px;
-  }
+  // .page-name__title {
+  //   margin-top: 65px;
+  // }
 }
 
 @media (min-width: $width-desktop) {
-  .page-name {
-    width: 1220px;
-    margin-left: auto;
-    margin-right: auto;
-  }
+  // .page-name {
+  //   width: 1220px;
+  //   margin-left: auto;
+  //   margin-right: auto;
+  // }
 }

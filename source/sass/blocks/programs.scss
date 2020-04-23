@@ -1,20 +1,33 @@
-.programs {
-  margin-left: 20px;
-  margin-right: 20px;
-}
+// .programs {
+//   margin-left: 20px;
+//   margin-right: 20px;
+//   margin-top: 22px;
+// }
 
 .programs__list {
   @include list-reset;
 }
 
 .programs__item {
-  margin-bottom: 22px;
+  margin-bottom: 20px;
+}
+
+@media (min-width: $width-tablet) {
+  // .programs {
+  //   margin: 0 30px;
+  // }
+
+  .programs__item {
+    margin-bottom: 30px;
+  }
 }
 
 @media (min-width: $width-desktop) {
   .programs {
-    margin-left: 110px;
-    margin-right: 110px;
+    margin-bottom: 80px;
+    // margin-left: 110px;
+    // margin-right: 110px;
+    // margin-top: 30px;
   }
 
   .programs__list {

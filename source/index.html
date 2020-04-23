@@ -7,89 +7,99 @@
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo"></a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active">
-              <a>Главная</a>
-            </li>
-            <li class="site-list__item">
-              <a href="catalog.html">Каталог продукции</a>
-            </li>
-            <li class="site-list__item">
-              <a href="form.html">Подбор программы</a>
-            </li>
-          </ul>
-        </div>
+      <div class="container">
+        <nav class="main-nav">
+          <a class="page-header__logo">
+            <img class="page-header__logo-image" src="img/logo-mobile.svg" height="39" width="191" alt="Cat energy">
+          </a>
+          <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list site-list">
+              <li class="site-list__item site-list__item--active">
+                <a>Главная</a>
+              </li>
+              <li class="site-list__item">
+                <a href="catalog.html">Каталог продукции</a>
+              </li>
+              <li class="site-list__item">
+                <a href="form.html">Подбор программы</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
         <div class="banner">
           <h1 class="banner__title heading">Функциональное питание для котов</h1>
           <p class="banner__contain subtitle subtitle--center">Занялся собой? Займись котом!</p>
           <img class="banner__image" width="280" height="270" src="img/index-can-mobile@1x.png" alt="Изображение упаковки">
           <a class="button button--small-text" href="#">Подобрать программу</a>
         </div>
-      </nav>
+      </div>
     </header>
     <main class="page">
       <section class="programs">
         <h2 class="visually-hidden">Примеры программ</h2>
-        <ul class="programs__list">
-          <li class="programs__item program">
-            <h3 class="program__title program__title--loss">Похудение</h3>
-            <p class="program__description description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям?
-              Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-            <a class="program__catalog-link" href="#">Каталог Slim</a>
-          </li>
-          <li class="programs__item program">
-            <h3 class="program__title program__title--gain">Набор массы</h3>
-            <p class="program__description description">Заработать авторитет среди дворовых котов и даже собак?
-              Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-            <a class="program__catalog-link" href="#">Каталог pro</a>
-          </li>
-        </ul>
+        <div class="container">
+          <ul class="programs__list">
+            <li class="programs__item program">
+              <h3 class="program__title program__title--loss">Похудение</h3>
+              <p class="program__description description">Ваш кот весит больше собаки и почти&nbsp;утратил способность лазить по деревьям?
+                Пора&nbsp;на&nbsp;диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+              <a class="program__catalog-link" href="#">Каталог Slim</a>
+            </li>
+            <li class="programs__item program">
+              <h3 class="program__title program__title--gain">Набор массы</h3>
+              <p class="program__description description">Заработать авторитет среди дворовых котов и&nbsp;даже&nbsp;собак?
+                Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
+              <a class="program__catalog-link" href="#">Каталог pro</a>
+            </li>
+          </ul>
+        </div>
       </section>
       <section class="features">
-        <h2 class="features__title inner-title">Как это работает</h2>
-        <ul class="features__list">
-          <li class="features__item features__item--useful">
-            <p class="features__description description">Функциональное питание содержит только полезные питательные вещества.</p>
-          </li>
-          <li class="features__item features__item--powder">
-            <p class="features__description description">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
-          </li>
-          <li class="features__item features__item--replace">
-            <p class="features__description description">Замените один-два приема обычной еды на наше функциональное питание.</p>
-          </li>
-          <li class="features__item features__item--fast">
-            <p class="features__description description">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
-          </li>
-        </ul>
+        <div class="container">
+          <h2 class="features__title inner-title">Как это работает</h2>
+          <ul class="features__list">
+            <li class="features__item features__item--useful">
+              <p class="features__description description">Функциональное питание содержит только полезные питательные вещества.</p>
+            </li>
+            <li class="features__item features__item--powder">
+              <p class="features__description description">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
+            </li>
+            <li class="features__item features__item--replace">
+              <p class="features__description description">Замените один-два приема обычной еды на наше функциональное питание.</p>
+            </li>
+            <li class="features__item features__item--fast">
+              <p class="features__description description">Уже через месяц наслаждайтесь изменениями к лучшему вашего&nbsp;питомца!</p>
+            </li>
+          </ul>
+        </div>
       </section>
       <section class="example">
-        <h2 class="example__title inner-title">Живой пример</h2>
-        <p class="example__description description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
-          Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
-          <div class="example__metrics metrics">
-            <ul class="metrics__list">
-              <li class="metrics__item">
-                <h3 class="metrics__title">5 кг</h3>
-                <p class="metrics__description">снижение веса</p>
-              </li>
-              <li class="metrics__item">
-                <h3 class="metrics__title">60 дней</h3>
-                <p class="metrics__description">затрачено времени</p>
-              </li>
-            </ul>
-            <p class="metrics__cost">Затраты на питание: 15 000 руб.</p>
+        <div class="container">
+          <h2 class="example__title inner-title">Живой пример</h2>
+          <p class="example__description description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
+            Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
+            <div class="example__metrics metrics">
+              <ul class="metrics__list">
+                <li class="metrics__item">
+                  <h3 class="metrics__title">5 кг</h3>
+                  <p class="metrics__description">снижение веса</p>
+                </li>
+                <li class="metrics__item">
+                  <h3 class="metrics__title">60 дней</h3>
+                  <p class="metrics__description">затрачено времени</p>
+                </li>
+              </ul>
+              <p class="metrics__cost">Затраты на питание: 15 000 руб.</p>
+            </div>
+          <div class="example__image-wrapper">
+            <img src="img/fat_cat.jpg" alt="Котик" class="example__image" width="311" height="232">
           </div>
-        <div class="example__image-wrapper">
-          <img src="img/fat_cat.jpg" alt="Котик" class="example__image" width="311" height="232">
-        </div>
-        <div class="example__progressbar">
-          <span class="example__before">Было</span>
-          <div class="example__bar">50%</div>
-          <span class="example__after">Стало</span>
+          <div class="example__progressbar">
+            <span class="example__before">Было</span>
+            <div class="example__bar">50%</div>
+            <span class="example__after">Стало</span>
+          </div>
         </div>
       </section>
       <section class="location">
@@ -102,7 +112,7 @@
       </section>
     </main>
     <footer class="page-footer">
-      <div class="page-footer__wrapper">
+      <div class="page-footer__wrapper container">
         <a class="page-footer__logo" aria-label="Cat energy">
         </a>
         <div class="page-footer__social social">
