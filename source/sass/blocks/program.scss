@@ -81,17 +81,17 @@
 
 @media (min-width: $width-tablet) and (max-width: $width-desktop - 1px) {
   .program {
-    padding: 56px 53px 60px;
+    padding: 76px 53px 60px;
   }
 
   .program__title {
     margin-left: 0;
-    margin-top: 19px;
+    margin-top: 0;
     font-size: 36px;
-    margin-bottom: 26px;
+    margin-bottom: 24px;
 
     &::before {
-      right: 10px;
+      right: 9px;
       left: auto;
       top: 15px;
       border-width: 100px;
@@ -127,7 +127,7 @@
     border: none;
     font-size: 16px;
     line-height: 24px;
-    margin-bottom: 33px;
+    margin-bottom: 36px;
   }
 
   .program__catalog-link {
@@ -136,7 +136,7 @@
 
     &::after {
       top: 10px;
-      right: -49px;
+      right: -47px;
     }
   }
 }

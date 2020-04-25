@@ -1,8 +1,9 @@
-// .features {
-//   // padding-left: 20px;
-//   // padding-right: 20px;
-//   // margin-top: -1px;
-// }
+.features {
+  padding-top: 0px;
+  //   // padding-left: 20px;
+  //   // padding-right: 20px;
+  //   // margin-top: -1px;
+}
 
 .features__title {
   margin-bottom: 28px;
@@ -28,25 +29,27 @@
     width: 60px;
     height: 60px;
     background-color: $button-background-color;
+    background-repeat: no-repeat;
+    background-position: center;
   }
 
-  &::after {
-    @include green-icon;
-  }
+  // &::after {
+  //   @include green-icon;
+  // }
 
-  &--useful::after {
+  &--useful::before {
     background-image: url("../img/advantage-leaf@1x.png");
   }
 
-  &--powder::after {
+  &--powder::before {
     background-image: url("../img/advantage-powder@1x.png");
   }
 
-  &--replace::after {
+  &--replace::before {
     background-image: url("../img/advantage-dining@1x.png");
   }
 
-  &--fast::after {
+  &--fast::before {
     background-image: url("../img/advantage-clock@1x.png");
   }
 }
@@ -56,10 +59,10 @@
 }
 
 @media (min-width: $width-tablet) {
-  // .features {
-  //   // margin-top: 46px;
-  //   // padding: 0 30px;
-  // }
+  .features {
+    // margin-top: 46px;
+    padding-top: 25px;
+  }
 
   .features__title {
     margin-bottom: 72px;
@@ -75,7 +78,7 @@
   .features__item {
     width: 46%;
     margin-left: 0;
-    margin-bottom: 132px;
+    margin-bottom: 134px;
     padding-top: 110px;
 
     &::before {
@@ -85,24 +88,24 @@
       height: 80px;
     }
 
-    &::after {
-      top: 15px;
-      left: 16px;
-      width: 64px;
-      height: 64px;
-    }
+    // &::after {
+    //   top: 15px;
+    //   left: 16px;
+    //   width: 64px;
+    //   height: 64px;
+    // }
   }
 
   .features__description {
     width: 245px;
-    padding-top: 3px;
+    padding-top: 1px;
     //position: relative;
 
     &::before {
       position: absolute;
       font-family: "Oswald", "Arial", sans-serif;
       z-index: -1;
-      left: 115px;
+      left: 116px;
       top: -40px;
       font-size: 281px;
       line-height: 281px;
@@ -114,12 +117,12 @@
 }
 
 @media (min-width: $width-desktop) {
-  // .features {
-  //   // margin-left: 110px;
-  //   // margin-right: 110px;
-  //   padding: 0;
-  //   // margin-top: 41px;
-  // }
+  .features {
+    // margin-left: 110px;
+    // margin-right: 110px;
+    padding: 0;
+    // margin-top: 41px;
+  }
 
   .features__item {
     width: 20%;

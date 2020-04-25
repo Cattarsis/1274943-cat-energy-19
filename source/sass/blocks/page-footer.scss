@@ -30,11 +30,17 @@
 }
 
 @media (min-width: $width-tablet) {
+  .page-footer {
+    min-height: 150px;
+  }
+
   .page-footer__wrapper {
     flex-direction: row;
     justify-content: space-between;
     // padding-top: 55px;
     // padding-bottom: 55px;
+    padding-top: 60px;
+    padding-bottom: 58px;
   }
 
   .page-footer__logo {
@@ -59,12 +65,12 @@
   //   margin-right: auto;
   //   padding-left: 0;
   //   padding-right: 0;
-    padding-top: 60px;
-    padding-bottom: 58px;
+    // padding-top: 60px;
+    // padding-bottom: 58px;
   }
 
   .page-footer {
-    min-height: 150px;
+    // min-height: 150px;
   }
 
   .page-footer__logo {

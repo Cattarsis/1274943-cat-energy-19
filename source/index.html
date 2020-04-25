@@ -3,34 +3,43 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
       <div class="container">
-        <nav class="main-nav">
-          <a class="page-header__logo">
+        <div class="page-header__wrapper">
+          <picture class="page-header__logo">
+            <source media="(min-width: 1280px)" srcset="img/logo-desktop.svg 1x">
+            <source media="(min-width: 760px)" srcset="img/logo-tablet.svg 1x">
             <img class="page-header__logo-image" src="img/logo-mobile.svg" height="39" width="191" alt="Cat energy">
-          </a>
-          <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
-          <div class="main-nav__wrapper">
-            <ul class="main-nav__list site-list">
-              <li class="site-list__item site-list__item--active">
-                <a>Главная</a>
-              </li>
-              <li class="site-list__item">
-                <a href="catalog.html">Каталог продукции</a>
-              </li>
-              <li class="site-list__item">
-                <a href="form.html">Подбор программы</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
+          </picture>
+          <nav class="main-nav">
+            <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
+            <div class="main-nav__wrapper">
+              <ul class="main-nav__list site-list">
+                <li class="site-list__item site-list__item--active">
+                  <a>Главная</a>
+                </li>
+                <li class="site-list__item">
+                  <a href="catalog.html">Каталог продукции</a>
+                </li>
+                <li class="site-list__item">
+                  <a href="form.html">Подбор программы</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
         <div class="banner">
           <h1 class="banner__title heading">Функциональное питание для котов</h1>
           <p class="banner__contain subtitle subtitle--center">Занялся собой? Займись котом!</p>
-          <img class="banner__image" width="280" height="270" src="img/index-can-mobile@1x.png" alt="Изображение упаковки">
+          <picture class="banner__picture">
+            <source media="(min-width: 1280px)" srcset="img/index-can-desktop@1x.png 1x">
+              <source media="(min-width: 760px)" srcset="img/index-can-tablet@1x.jpg 1x">
+            <img class="banner__image" width="280" height="270" src="img/index-can-mobile@1x.png" alt="Изображение упаковки">
+          </picture>
           <a class="button button--small-text" href="#">Подобрать программу</a>
         </div>
       </div>

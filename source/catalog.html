@@ -4,31 +4,36 @@
 <head>
   <meta charset="UTF-8">
   <title>HTML Academy: Кэт энерджи</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
   <header class="page-header page-header--inner">
     <div class="container">
-      <nav class="main-nav main-nav--inner">
-        <a class="page-header__logo">
+      <div class="page-header__wrapper">
+        <picture class="page-header__logo">
+          <source media="(min-width: 1280px)" srcset="img/logo-desktop.svg 1x">
+          <source media="(min-width: 760px)" srcset="img/logo-tablet.svg 1x">
           <img class="page-header__logo-image" src="img/logo-mobile.svg" height="39" width="191" alt="Cat energy">
-        </a>
-        <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--black ">
-              <a href="index.html">Главная</a>
-            </li>
-            <li class="site-list__item site-list__item--black site-list__item--active">
-              <a>Каталог продукции</a>
-            </li>
-            <li class="site-list__item site-list__item--black">
-              <a href="form.html">Подбор программы</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+        </picture>
+        <nav class="main-nav main-nav--inner">
+          <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list site-list">
+              <li class="site-list__item site-list__item--black ">
+                <a href="index.html">Главная</a>
+              </li>
+              <li class="site-list__item site-list__item--black site-list__item--active">
+                <a>Каталог продукции</a>
+              </li>
+              <li class="site-list__item site-list__item--black">
+                <a href="form.html">Подбор программы</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </div>
   </header>
   <main class="page">
