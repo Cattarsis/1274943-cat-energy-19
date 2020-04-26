@@ -5,3 +5,9 @@
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: normal;
 }
+
+@media (min-width: $width-tablet) {
+  .inner-title {
+    font-size: 60px;
+  }
+}

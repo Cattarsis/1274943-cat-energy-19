@@ -2,3 +2,28 @@
   border-bottom: $line-separate-color solid 1px;
   border-top: $line-separate-color solid 1px;
 }
+
+.page-name__title {
+  margin: 0;
+  padding-top: 28px;
+  padding-bottom: 40px;
+  text-align: left;
+}
+
+@media (min-width: $width-tablet) {
+  .page-name {
+    border: none;
+  }
+
+  // .page-name__title {
+  //   margin-top: 65px;
+  // }
+}
+
+@media (min-width: $width-desktop) {
+  // .page-name {
+  //   width: 1220px;
+  //   margin-left: auto;
+  //   margin-right: auto;
+  // }
+}

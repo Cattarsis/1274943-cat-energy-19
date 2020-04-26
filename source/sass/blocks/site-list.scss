@@ -1,0 +1,46 @@
+
+.site-list__item {
+  text-transform: uppercase;
+}
+
+@media (min-width: $width-tablet) {
+  .site-list {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    // width: 100%;
+    justify-content: flex-end;
+  }
+
+  .site-list__item {
+    color: $main-menu-text-color;
+    font-family: "Oswald", "Arial", sans-serif;
+    font-weight: normal;
+    margin-left: 35px;
+    font-size: 18px;
+    line-height: 25px;
+
+    &--active {
+      padding-bottom: 7px;
+      border-bottom: $button-background-color solid 2px;
+    }
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .site-list__item {
+    color: $heading-font-inverse-color;
+    font-size: 20px;
+    line-height: 25px;
+    margin-left: 35px;
+
+    &--black {
+      color: $main-menu-text-color;
+    }
+  }
+
+  .site-list {
+
+    width: auto;
+  }
+}
