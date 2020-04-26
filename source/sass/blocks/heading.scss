@@ -10,3 +10,12 @@
     color: $heading-font-color;
   }
 }
+
+@media (min-width: $width-tablet) {
+  .heading {
+    color: $heading-font-color;
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
+  }
+}

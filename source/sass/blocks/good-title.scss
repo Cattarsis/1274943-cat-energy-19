@@ -10,3 +10,11 @@
     text-align: center;
   }
 }
+
+@media (min-width: $width-tablet) {
+  .good-title {
+    text-align: center;
+    font-size: 20px;
+    // width: 55%;
+  }
+}

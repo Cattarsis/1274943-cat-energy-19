@@ -1,6 +1,10 @@
 .option-table {
   display: flex;
   flex-direction: column;
+  border-spacing: 0;
+  border-collapse: collapse;
+  font-size: 12px;
+  line-height: 14px;
 }
 
 .option-table__row {
@@ -10,11 +14,30 @@
 
 .option-table__cell {
   font-size: 12px;
-  line-height: 16px;
+  line-height: 15px;
   color: $main-font-color;
   font-family: "ArialMT", sans-serif;
+  // border: red solid 1px;
 
   &--right {
     text-align: right;
+  }
+}
+
+@media (min-width: $width-tablet) {
+  .option-table {
+    padding-top: 5px;
+  }
+
+  .option-table__row {
+    // height: 31px;
+    padding-top: 7px;
+    padding-bottom: 6px;
+    border-bottom: $line-separate-color solid 1px;
+  }
+
+  .option-table__cell {
+    font-size: 16px;
+    line-height: 16px;
   }
 }

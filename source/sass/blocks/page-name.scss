@@ -1,4 +1,36 @@
 .page-name {
   border-bottom: $line-separate-color solid 1px;
-  border-top: $line-separate-color solid 1px;
+  // border-top: $line-separate-color solid 1px;
+}
+
+.page-name__title {
+  margin: 0;
+  padding-top: 28px;
+  padding-bottom: 41px;
+  text-align: left;
+}
+
+@media (min-width: $width-tablet) {
+  .page-name {
+    border: none;
+    margin-bottom: 25px;
+  }
+
+  .page-name__title {
+    padding-top: 50px;
+    padding-bottom: 0;
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .page-name {
+    margin-bottom: 23px;
+    //   width: 1220px;
+    //   margin-left: auto;
+    //   margin-right: auto;
+  }
+
+  .page-name__title {
+    padding-top: 46px;
+  }
 }

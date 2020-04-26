@@ -1,10 +1,37 @@
 body {
-  // background: green;
-  width: $width-mobile;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0;
+  min-width: 320px;
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
   color: $main-font-color;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+  // max-width: 320px;
+  min-width: 320px;
+  box-sizing: border-box;
+}
+
+@media (min-width: $width-tablet) {
+  .container {
+    padding-left: 30px;
+    padding-right: 30px;
+    min-width: 768px;
+    // max-width: 900px;
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .container {
+    max-width: 1280px;
+  }
 }
