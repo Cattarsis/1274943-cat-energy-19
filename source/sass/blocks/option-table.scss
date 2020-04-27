@@ -18,3 +18,15 @@
     text-align: right;
   }
 }
+
+@media (min-width: $width-tablet) {
+  .option-table__row {
+    // height: 31px;
+    border-bottom: $line-separate-color solid 1px;
+  }
+
+  .option-table__cell {
+    margin-top: 6px;
+    margin-bottom: 9px;
+  }
+}
