@@ -5,6 +5,8 @@ body {
   font-size: 14px;
   line-height: 18px;
   color: $main-font-color;
+  overflow-x: hidden;
+  width: 100%;
 }
 
 a {
@@ -25,8 +27,8 @@ a {
   .container {
     padding-left: 30px;
     padding-right: 30px;
-    min-width: 768px;
-    // max-width: 900px;
+    min-width: 765px;
+    max-width: 900px;
   }
 }
 

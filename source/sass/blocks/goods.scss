@@ -15,8 +15,21 @@
 }
 
 .goods__item {
-  border-bottom: $line-separate-color solid 1px;
-  padding-bottom: 25px;
+  // border-bottom: $line-separate-color solid 1px;
+  padding-bottom: 24px;
+  box-sizing: border-box;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    // left: -20px;
+    bottom: 0;
+    width: calc(100% + 40px);
+    margin: 0 -20px;
+    height: 0;
+    border-top: $line-separate-color solid 1px;
+  }
 }
 
 @media (min-width: $width-tablet) {
@@ -27,8 +40,12 @@
   }
 
   .goods__item {
-    margin-top: 140px;
+    margin-bottom: 38px;
     border: none;
+
+    &::after {
+      display: none;
+    }
   }
 }
 
@@ -47,6 +64,7 @@
 
   .goods__item {
     margin-right: 80px;
+    margin-bottom: 42px;
 
     &:nth-child(4n) {
       margin-right: 0;

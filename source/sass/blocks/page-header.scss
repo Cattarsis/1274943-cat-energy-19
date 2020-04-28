@@ -22,7 +22,7 @@
   box-sizing: border-box;
   //   display: block;
   //   margin-left: 20px;
-    // margin-top: 11px;
+  //   margin-top: 11px;
   //   margin-bottom: 15px;
   //   background-image: url("../img/logo-mobile.svg");
   //   background-repeat: no-repeat;
@@ -70,6 +70,7 @@
 
     &--inner {
       background: none;
+      margin: 0;
     }
   }
 
