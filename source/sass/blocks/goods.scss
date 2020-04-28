@@ -23,9 +23,10 @@
   &::after {
     content: "";
     position: absolute;
-    left: -20px;
+    // left: -20px;
     bottom: 0;
-    width: 100vw;
+    width: calc(100% + 40px);
+    margin: 0 -20px;
     height: 0;
     border-top: $line-separate-color solid 1px;
   }
@@ -39,7 +40,7 @@
   }
 
   .goods__item {
-    margin-top: 140px;
+    margin-bottom: 38px;
     border: none;
 
     &::after {
@@ -63,7 +64,7 @@
 
   .goods__item {
     margin-right: 80px;
-    margin-top: 142px;
+    margin-bottom: 42px;
 
     &:nth-child(4n) {
       margin-right: 0;
