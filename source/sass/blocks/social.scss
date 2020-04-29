@@ -14,17 +14,40 @@
   display: flex;
 
   &--vkontakte {
+    padding-top: 9px;
     width: 22px;
-    height: 12px;
+    height: 19px;
   }
 
   &--instagram {
-    width: 17px;
-    height: 17px;
+    padding-top: 6px;
+    width: 20px;
+    height: 19px;
   }
 
   &--facebook {
     width: 10px;
     height: 19px;
+  }
+}
+
+@media (min-width: $width-tablet) {
+  .social__link {
+    &--vkontakte {
+      padding-top: 9px;
+      width: 22px;
+      height: 19px;
+    }
+
+    &--instagram {
+      padding-top: 6px;
+      width: 20px;
+      height: 19px;
+    }
+
+    &--facebook {
+      width: 10px;
+      height: 19px;
+    }
   }
 }
