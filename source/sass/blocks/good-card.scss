@@ -92,13 +92,13 @@
       padding-top: 0;
       padding-bottom: 38px;
       border: $line-separate-color solid 1px;
-      background-color: auto;
+      // background-color: auto;
     }
   }
 
   .good-card__description-wrapper {
     width: 100%;
-    padding-top: 20px;
+    padding-top: 37px;
     margin-bottom: 33px;
   }
 
@@ -155,9 +155,9 @@
     &--add {
       width: 61px;
       height: 61px;
-
-      left: calc(50% - 29px);
-      bottom: 314px;
+      transform: translate(1px, -12px);
+      // left: calc(50% - 28px);
+      // bottom: 314px;
     }
   }
 }
@@ -175,10 +175,18 @@
 
   .good-card__image-wrapper {
     width: 100%;
+
+    &--add {
+      height: 125px;
+    }
   }
 
   .good-card__image {
     width: 245px;
+
+    &--add {
+      transform: translateY(-11px);
+    }
   }
 
   .good-card__title {
@@ -187,6 +195,7 @@
 
   .good-card__description {
     &--text {
+      line-height: 19px;
       padding: 0 0 2px;
     }
   }

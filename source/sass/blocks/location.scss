@@ -1,0 +1,118 @@
+.location__wrapper {
+  display: flex;
+  padding-top: 28px;
+  padding-bottom: 26px;
+  background-color: $heading-font-inverse-color;
+}
+
+.location__title {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.25em;
+  text-transform: uppercase;
+  color: $heading-font-color;
+  font-family: "oswald", "Arial", sans-serif;
+  width: 50%;
+}
+
+.location__address {
+  font-style: normal;
+  line-height: 20px;
+  width: 50%;
+}
+
+.location__map {
+  position: relative;
+  height: 362px;
+
+  &::after {
+    position: absolute;
+    content: "";
+    background-image: url("../img/map-pin.png");
+    background-size: 62px 53px;
+    width: 55px;
+    height: 53px;
+    left: calc(50% - 31px);
+    top: calc(50% - 42px);
+  }
+}
+
+.location__map-image {
+  z-index: -1;
+  transform: translateY(-38px);
+}
+
+@media (min-width: $width-tablet) {
+  .location__wrapper {
+    padding: 64px 71px 59px;
+  }
+
+  .location__title {
+    font-size: 20px;
+    width: min-content;
+    // padding-left: 41px;
+  }
+
+  .location__address {
+    font-size: 16px;
+    line-height: 1.25em;
+    text-align: right;
+    margin-top: -3px;
+
+    width: 170px;
+    margin-left: auto;
+  }
+
+  .location__map {
+    height: 396px;
+    // width: 100%;
+
+    &::after {
+      background-size: 124px 106px;
+      width: 110px;
+      height: 106px;
+      left: calc(50% - 62px);
+      top: calc(50% - 52px);
+    }
+  }
+
+  .location__map-image {
+    width: 100%;
+    height: auto;
+    transform: translateY(-5px);
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .location {
+    position: relative;
+  }
+
+  .location__wrapper {
+    padding-left: 75px;
+    padding-right: 74px;
+    position: absolute;
+    width: 570px;
+    min-width: 570px;
+    left: 110px;
+    top: 96px;
+    z-index: 1;
+  }
+
+  .location__address {
+    text-align: left;
+  }
+
+  .location__map {
+    height: 400px;
+
+    &::after {
+      left: calc(75% - 82px);
+    }
+  }
+
+  .location__map-image {
+    height: 400px;
+    transform: none;
+  }
+}

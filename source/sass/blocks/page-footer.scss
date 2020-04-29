@@ -11,10 +11,11 @@
 
 .page-footer__logo {
   background-image: url("../img/logo-footer.svg");
-  background-position: 50% 50%;
+  background-position: 50% 55%;
   background-size: 128px 24px;
   background-repeat: no-repeat;
   flex-basis: 94px;
+  text-align: center;
 }
 
 .page-footer__social {
@@ -39,7 +40,7 @@
     justify-content: space-between;
     // padding-top: 55px;
     // padding-bottom: 55px;
-    padding-top: 60px;
+    padding-top: 56px;
     padding-bottom: 58px;
   }
 
@@ -49,12 +50,13 @@
   }
 
   .page-footer__social {
-    flex-basis: 100px;
+    flex-basis: 150px;
     border: none;
+    // padding: 0 20px;
   }
 
   .page-footer__copyright {
-    flex-basis: 150px;
+    flex-basis: 163px;
   }
 }
 
