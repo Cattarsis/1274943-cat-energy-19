@@ -1,5 +1,5 @@
 .page-name {
-  border-bottom: $line-separate-color solid 1px;
+  // border-bottom: $line-separate-color solid 1px;
   // border-top: $line-separate-color solid 1px;
 }
 
@@ -10,10 +10,22 @@
   text-align: left;
 }
 
+.page-name__subtitle {
+  margin-top: -2px;
+  margin-bottom: 39px;
+  padding-right: 30px;
+  width: min-content;
+}
+
 @media (min-width: $width-tablet) {
   .page-name {
     border: none;
     margin-bottom: 65px;
+  }
+
+  .page-name__subtitle {
+    margin-top: 55px;
+    padding-left: 40px;
   }
 
   .page-name__title {
@@ -32,5 +44,9 @@
 
   .page-name__title {
     padding-top: 46px;
+  }
+
+  .page-name__subtitle {
+    padding-left: 0;
   }
 }

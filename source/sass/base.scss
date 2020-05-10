@@ -33,6 +33,11 @@ br {
     padding-right: 30px;
     min-width: 768px;
     max-width: 900px;
+
+    &--form {
+      padding-left: 70px;
+      padding-right: 65px;
+    }
   }
 
   br {
@@ -44,5 +49,10 @@ br {
 @media (min-width: $width-desktop) {
   .container {
     max-width: 1280px;
+
+    &--form {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
   }
 }

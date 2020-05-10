@@ -5,6 +5,7 @@
   // background-size: contain;
   // background-position: center top 66px;
   position: relative;
+  border-bottom: $line-separate-color solid 1px;
 }
 
 .page-header__logo {
@@ -14,6 +15,7 @@
 
 .page-header__wrapper {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
@@ -36,12 +38,14 @@
     // justify-content: space-between;
     background-image: none;
     margin-bottom: 0;
+    border-bottom: none;
   }
 
-  // .page-header__wrapper {
+  .page-header__wrapper {
   //   display: flex;
   //   justify-content: space-between;
-  // }
+  margin-bottom: 4px;
+  }
 
   .page-header__logo {
     padding-top: 24px;
@@ -64,9 +68,11 @@
       url("../img/index-background-desktop@1x.jpg"),
       linear-gradient(to right, transparent 50%, #65a93c 50%);
     // background-position: top right, left;
-    background-position: left, top right, right;
+    background-position: top left, top right, top right;
     background-repeat: no-repeat;
+    background-size: auto 696px;
     margin-bottom: 80px;
+    border-bottom: none;
 
     &--inner {
       background: none;
@@ -77,7 +83,7 @@
   .page-header__wrapper {
     // display: flex;
     // justify-content: space-between;
-    margin-bottom: 21px;
+    margin-bottom: 25px;
   }
 
   .page-header__logo {
@@ -91,5 +97,17 @@
     // background-image: url("../img/logo-desktop.svg");
     width: 203px;
     height: 60px;
+  }
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    .page-header {
+      background-image: linear-gradient(to right, #ffffff 50%, transparent 50%),
+        url("../img/index-background-desktop@2x.jpg"),
+        linear-gradient(to right, transparent 50%, #65a93c 50%);
+
+      &--inner {
+        background: none;
+      }
+    }
   }
 }

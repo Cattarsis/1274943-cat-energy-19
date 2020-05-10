@@ -3,6 +3,7 @@
   // background-image: url("../img/index-background-mobile@1x.jpg");
   // background-repeat: no-repeat;
   // background-position: top left -10px;
+  position: relative;
 
   padding-top: 29px;
 
@@ -10,8 +11,8 @@
     content: "";
     position: absolute;
     z-index: -1;
-    top: 66px;
-    left: 0;
+    top: 2px;
+    left: -20px;
     display: block;
     background-image: url("../img/index-background-mobile@1x.jpg");
     //,linear-gradient(to bottom, #65a93c);
@@ -19,7 +20,7 @@
     background-size: 320px 305px;
     background-position: center top;
     background-color: #65a93c;
-    width: 100%;
+    width: 100vw;
     height: 305px;
   }
 }
@@ -27,6 +28,7 @@
 .banner__title {
   margin-top: 0;
   margin-bottom: 25px;
+  min-height: 72px;
 }
 
 .banner__contain {
@@ -43,6 +45,13 @@
   margin-right: auto;
 }
 
+@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  .banner__image {
+    &::before {
+      background-image: url("../img/index-background-mobile@2x.jpg");
+    }
+  }
+}
 
 @media (min-width: $width-tablet) {
   .banner {

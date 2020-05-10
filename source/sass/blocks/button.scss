@@ -21,6 +21,14 @@
     padding-bottom: 11px;
   }
 
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    color: rgba($heading-font-inverse-color, $alpha: .3);
+  }
+
   &--gray {
     background-color: $alternate-background-color;
     color: $main-font-color;
@@ -40,5 +48,11 @@
       padding-top: 16px;
       padding-bottom: 16px;
     }
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .button {
+    max-width: 245px;
   }
 }
