@@ -1,0 +1,13 @@
+.inner-title {
+  font-size: 36px;
+  line-height: 60px;
+  margin-top: 0;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: normal;
+}
+
+@media (min-width: $width-tablet) {
+  .inner-title {
+    font-size: 60px;
+  }
+}

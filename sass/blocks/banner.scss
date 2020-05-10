@@ -1,0 +1,125 @@
+.banner {
+  // padding-top: 1px;
+  // background-image: url("../img/index-background-mobile@1x.jpg");
+  // background-repeat: no-repeat;
+  // background-position: top left -10px;
+  position: relative;
+
+  padding-top: 29px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 2px;
+    left: -20px;
+    display: block;
+    background-image: url("../img/index-background-mobile@1x.jpg");
+    //,linear-gradient(to bottom, #65a93c);
+    background-repeat: no-repeat;
+    background-size: 320px 305px;
+    background-position: center top;
+    background-color: #65a93c;
+    width: 100vw;
+    height: 305px;
+  }
+}
+
+.banner__title {
+  margin-top: 0;
+  margin-bottom: 25px;
+  min-height: 72px;
+}
+
+.banner__contain {
+  margin-bottom: 28px;
+  //   margin-left: 35px;
+  //   margin-right: 35px;
+}
+
+.banner__image {
+  display: block;
+  margin-bottom: 4px;
+  // text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  .banner__image {
+    &::before {
+      background-image: url("../img/index-background-mobile@2x.jpg");
+    }
+  }
+}
+
+@media (min-width: $width-tablet) {
+  .banner {
+    // background-image: url("../img/index-can-tablet@1x.jpg");
+    // background-repeat: no-repeat;
+    // background-position: bottom;
+    position: relative;
+    min-height: 810px;
+    padding-left: 87px;
+    padding-right: 90px;
+    padding-top: 50px;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .banner__image {
+    position: absolute;
+    width: 709px;
+    height: 609px;
+    bottom: -3px;
+    left: 0;
+    z-index: -1;
+  }
+
+  .banner__title {
+    columns: $heading-font-color;
+    // margin-top: 48px;
+    margin-bottom: 41px;
+  }
+
+
+  .banner__contain {
+    margin-top: 0;
+    margin-bottom: 48px;
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .banner {
+    // background-image: url("../img/index-can-desktop@1x.png");
+    // background-position: top  left 67.5%;
+    box-sizing: border-box;
+    min-height: 554px;
+    padding-left: 81px;
+    padding-right: 0;
+    padding-top: 80px;
+    // margin-left: 110px;
+    // margin-right: 110px;
+    width: auto;
+  }
+
+  .banner__image {
+    width: 552px;
+    height: 499px;
+    left: 36.9%;
+    top: 1px;
+    z-index: 0;
+  }
+
+  .banner__title {
+    width: 420px;
+    // margin-top: 78px;
+    // margin-left: 81px;
+  }
+
+  .banner__contain {
+    margin-bottom: 53px;
+  }
+}

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML Academy: Кэт энерджи</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/style.min.css" rel="stylesheet">
+</head>
+<body>
+  <header class="page-header page-header--inner">
+    <div class="container">
+      <div class="page-header__wrapper">
+        <a href="index.html">
+          <picture class="page-header__logo">
+            <source media="(min-width: 1280px)" srcset="img/logo-desktop.svg 1x">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg 1x">
+            <img class="page-header__logo-image" src="img/logo-mobile.svg" height="39" width="191" alt="Cat energy">
+          </picture>
+        </a>
+        <nav class="main-nav main-nav--inner">
+          <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list site-list">
+              <li class="site-list__item site-list__item--black">
+                <a href="index.html">Главная</a>
+              </li>
+              <li class="site-list__item site-list__item--black">
+                <a href="catalog.html">Каталог продукции</a>
+              </li>
+              <li class="site-list__item site-list__item--black site-list__item--active">
+                <a>Подбор программы</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <main class="page">
+    <div class="container">
+      <div class="page-name">
+        <h1 class="page-name__title heading heading--black">Подбор программы</h1>
+        <p class="page-name__subtitle subtitle subtitle--black">Заполните&nbsp;анкету&nbsp;и&nbsp;мы&nbsp;подберем
+          программу&nbsp;питания&nbsp;для&nbsp;вашего&nbsp;кота</p>
+      </div>
+    </div>
+    <form class="form" action="https://echo.htmlacademy.ru" method="post">
+      <div class="form__fieldset-wrapper container container--form">
+        <fieldset class="form__fieldset form__fieldset--no-border">
+          <legend class="visually-hidden">Описание кота</legend>
+          <!-- <div class="container container--form"> -->
+            <p class="form__field-wrapper">
+              <label class="form__label" for="cat-name">Имя:*</label>
+              <input class="form__input" type="text" id="cat-name" name="cat-name" required placeholder="Барсик">
+            </p>
+            <p class="form__field-wrapper">
+              <label class="form__label" for="cat-weight">Вес (кг):*</label>
+              <input class="form__input" type="text" id="cat-weight" name="cat-weight" required placeholder="7">
+            </p>
+            <p class="form__field-wrapper">
+              <label class="form__label" for="cat-age">Возраст (лет):</label>
+              <input class="form__input" type="text" id="cat-age" name="cat-age" placeholder="7">
+            </p>
+          <!-- </div> -->
+        </fieldset>
+        <fieldset class="form__fieldset form__fieldset--thin-border">
+          <legend class="visually-hidden">Выбор программы</legend>
+          <!-- <div class="container container--form"> -->
+            <ul class="form__fieldset-list form__fieldset-list--border">
+              <li class="form__fieldset-list-item radio">
+                <input class="radio__input visually-hidden" type="radio"  name="program" value="program-loss" id="program-loss" checked>
+                <label class="radio__label" for="program-loss">Похудение</label>
+              </li>
+              <li class="form__fieldset-list-item radio">
+                <input class="radio__input visually-hidden" type="radio" name="program" value="program-gain" id="program-gain">
+                <label class="radio__label" for="program-gain">Набор массы</label>
+              </li>
+              <li class="form__fieldset-list-item radio">
+                <input class="radio__input visually-hidden" type="radio" name="program" value="program-unknown" id="program-unknown">
+                <label class="radio__label" for="program-unknown">Не знаю (Нужен ваш совет)</label>
+              </li>
+            </ul>
+          <!-- </div> -->
+        </fieldset>
+      </div>
+      <fieldset class="form__fieldset form__fieldset--contacts">
+        <legend class="form__fieldset-legend section-title">Контактные&nbsp;данные
+          (владельца кота)</legend>
+        <div class="form__contact-wrapper container container--form">
+
+          <p class="form__field-wrapper form__field-wrapper--email">
+            <label class="form__label form__label--email" for="owner-email">E-mail:*
+              <input class="form__input" type="email" id="owner-email" name="owner-email" required placeholder="kuklachev@gmail.com">
+              <svg class="form__input-icon form__input-icon--mail" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="#icon-mail"></use>
+              </svg>
+            </label>
+          </p>
+          <p class="form__field-wrapper form__field-wrapper--phone">
+            <label class="form__label form__label--phone" for="owner-phone">Телефон:*
+              <input class="form__input" type="tel" id="owner-phone" name="owner-phone" required placeholder="8 (960) 900-60-90">
+              <svg class="form__input-icon form__input-icon--phone" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="#icon-phone"></use>
+              </svg>
+            </label>
+          </p>
+        </div>
+      </fieldset>
+      <fieldset class="form__fieldset">
+        <legend class="form__fieldset-legend section-title">Комментарий</legend>
+        <div class="container container--form">
+          <textarea class="form__input form__input--textarea" id="owner-comment" name="owner-comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+        </div>
+      </fieldset>
+      <fieldset class="form__fieldset form__fieldset--add">
+        <legend class="form__fieldset-legend section-title">Дополнительно</legend>
+        <div class="container container--form">
+          <ul class="form__fieldset-list form__fieldset-list--add">
+            <li class="form__fieldset-list-item form__fieldset-list-item--check checkbox">
+              <input class="checkbox__input visually-hidden" type="checkbox" id="add-shugar" name="add-shugar" checked>
+              <label class="checkbox__label" for="add-shugar">Сахарозаменитель</label>
+            </li>
+            <li class="form__fieldset-list-item form__fieldset-list-item--check checkbox">
+              <input class="checkbox__input visually-hidden" type="checkbox" id="add-water" name="add-water">
+              <label class="checkbox__label" for="add-water">Питьевая вода</label>
+            </li>
+            <li class="form__fieldset-list-item form__fieldset-list-item--check checkbox">
+              <input class="checkbox__input visually-hidden" type="checkbox" id="add-milk" name="add-milk">
+              <label class="checkbox__label" for="add-milk">Молоко</label>
+            </li>
+            <li class="form__fieldset-list-item form__fieldset-list-item--check checkbox">
+              <input class="checkbox__input visually-hidden" type="checkbox" id="add-vitamins" name="add-vitamins">
+              <label class="checkbox__label" for="add-vitamins">Витамины</label>
+            </li>
+          </ul>
+        </div>
+      </fieldset>
+      <div class="form__button-wrapper container container--form">
+        <button class="form__send-button button" type="submit">Отправить заявку</button>
+        <small class="form__note form__note--bottom"> <sup>*</sup> — Обязательные поля</small>
+      </div>
+
+    </form>
+    <section class="location">
+      <div class="location__wrapper container">
+        <p class="location__title">приглашаем
+          к&nbsp;сотрудничеству
+          дилеров!</p>
+        <address class="location__address">ул. Большая Конюшенная, д. 19/8
+            <br><br>Санкт-Петербург</address>
+      </div>
+      <div id="map" style="width: auto; height: 400px"></div>
+      <div class="location__map">
+        <picture>
+          <source media="(min-width: 1280px)" type="image/webp" srcset="img/map-desktop@1x.webp 1x, img/map-desktop@2x.webp 2x">
+          <source media="(min-width: 1280px)" srcset="img/map-desktop@1x.png 1x, img/map-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" type="image/webp" srcset="img/map-tablet@1x.webp 1x, img/map-tablet@2x.webp 2x">
+          <source media="(min-width: 768px)" srcset="img/map-tablet@1x.png 1x, img/map-tablet@2x.png 2x">
+          <source type="image/webp" srcset="img/map-mobile@1x.webp 1x, img/map-mobile@2x.webp 2x">
+          <img class="location__map-image" src="img/map-mobile@1x.png" srcset="img/map-mobile@2x.png 2x" width="320" height="400" alt="карта">
+        </picture>
+      </div>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <div class="page-footer__wrapper container">
+      <a class="page-footer__logo" aria-label="Cat energy">
+      </a>
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy" aria-label="Мы в Вконтакте">
+              <svg class="icon"  xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="#icon-vk"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy" aria-label="Мы в Инстаграме">
+              <svg class="icon" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="#icon-insta"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy" aria-label="Мы в Фейсбуке">
+              <svg class="icon" xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="#icon-fb"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <b class="copyright__text">HTML Academy</b>
+        <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Academy logo">
+          <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60"><path d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&onload=init&amp;apikey=7f4a39b4-52a0-4de1-bec3-b3d9778b20d6" type="text/javascript"></script>
+  <script src="js/main.js"></script>
+  <div style="display:none">
+    <include src="build/img/sprite.svg"></include>
+  </div>
+
+</body>
+</html>

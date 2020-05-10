@@ -1,0 +1,21 @@
+.heading {
+  font-size: 36px;
+  line-height: 36px;
+  color: $heading-font-inverse-color;
+  text-align: center;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: normal;
+
+  &--black {
+    color: $heading-font-color;
+  }
+}
+
+@media (min-width: $width-tablet) {
+  .heading {
+    color: $heading-font-color;
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
+  }
+}

@@ -1,0 +1,20 @@
+.good-title {
+  color: $heading-font-color;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: normal;
+
+  &--center {
+    text-align: center;
+  }
+}
+
+@media (min-width: $width-tablet) {
+  .good-title {
+    text-align: center;
+    font-size: 20px;
+    // width: 55%;
+  }
+}

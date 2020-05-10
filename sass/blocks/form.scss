@@ -1,0 +1,373 @@
+.form__note {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  // margin: 0 auto;
+  width: 100%;
+}
+
+.form__fieldset {
+  border: none;
+  border-top: $button-background-color solid 3px;
+  padding: 0;
+  padding-top: 30px;
+  margin: 0;
+  // position: relative;
+  padding-bottom: 29px;
+
+  &--no-border {
+    border: none;
+    padding-bottom: 9px;
+    padding-top: 0;
+  }
+
+  &--thin-border {
+    position: relative;
+    border: none;
+    padding-bottom: 5px;
+    margin-bottom: 19px;
+    // padding-top: 0;
+    padding-top: 26px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -20px;
+      width: calc(100% + 40px);
+      border-top: $line-separate-color solid 1px;
+
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: -20px;
+      width: calc(100% + 40px);
+      border-bottom: $line-separate-color solid 1px;
+
+    }
+  }
+
+  &--contacts {
+    padding-top: 41px;
+    padding-bottom: 17px;
+  }
+
+  &--add {
+    padding-top: 35px;
+    padding-bottom: 18px;
+  }
+}
+
+.form__fieldset-legend {
+  width: min-content;
+  padding-left: 20px;
+  padding-right: 20px;
+  // padding-top: 17px;
+  line-height: 25px;
+  // position: relative;
+  // top: -17px;
+  // top: 8px;
+  // background-color: #ffffff;
+}
+
+.form__field-wrapper {
+  margin-top: 0;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.form__label {
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  font-family: $oswald;
+  margin-right: 13px;
+  width: max-content;
+
+  &--email, &--phone {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin-right: 0;
+  }
+}
+
+.form__input {
+  display: inline-block;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  font-family: $oswald;
+  box-sizing: border-box;
+  height: 45px;
+  padding-left: 13px;
+  width: 150px;
+  flex-basis: auto;
+  flex-grow: 1;
+  border: rgba($metrics-border-color, 0.5) solid 1px;
+
+  &:hover {
+    border-color: $metrics-border-color;
+  }
+
+  &:active {
+    border-color: $main-font-color;
+
+    & + .form__input-icon {
+      color: $button-background-color;
+    }
+  }
+
+  &:required:invalid {
+    // border-color: #ff8282;
+
+    & + .form__input-icon {
+      color: #ff8282;
+    }
+  }
+
+  &[type="tel"], &[type="email"] {
+    margin-left: 10px;
+  }
+
+  &--textarea {
+    width: 100%;
+    height: 150px;
+    box-sizing: border-box;
+    padding: 12px 10px 12px 15px;
+  }
+}
+
+.form__fieldset-list {
+  margin: 0;
+  padding-left: 46px;
+  // padding-top: 26px;
+  list-style: none;
+}
+
+.form__fieldset-list-item {
+  margin-bottom: 22px;
+}
+
+.form__send-button {
+  margin-bottom: 18px;
+}
+
+.form__button-wrapper {
+  padding-bottom: 30px;
+}
+
+.form__input-icon {
+  position: absolute;
+
+  &--mail {
+    width: 17px;
+    height: 13px;
+    right: 15px;
+  }
+
+  &--phone {
+    right: 14px;
+    height: 20px;
+    width: 20px;
+  }
+}
+
+@media (min-width: $width-tablet) {
+  .form__label {
+    font-size: 20px;
+    line-height: 20px;
+    margin-right: 17px;
+
+    &--email,
+    &--phone {
+      margin-right: 0;
+    }
+  }
+
+  .form__input {
+    font-size: 20px;
+    height: 52px;
+    padding-left: 17px;
+
+    &[type="tel"]{
+      margin-left: 14px;
+      padding-left: 19px;
+    }
+
+    &[type="email"] {
+      margin-left: 19px;
+      padding-left: 21px;
+    }
+
+    &--textarea {
+      padding-top: 15px;
+      height: 174px;
+    }
+  }
+
+  .form__field-wrapper {
+    margin-bottom: 20px;
+  }
+
+  .form__fieldset {
+    padding-top: 75px;
+    padding-bottom: 74px;
+
+    &--no-border {
+      padding-bottom: 9px;
+      padding-top: 0;
+    }
+
+    &--add {
+      padding-top: 66px;
+      padding-bottom: 13px;
+    }
+
+    &--thin-border {
+      border: none;
+      padding-top: 44px;
+      padding-bottom: 3px;
+      margin-bottom: 85px;
+
+      &::before,
+      &::after {
+        display: none;
+      }
+    }
+
+    &--contacts {
+      padding-top: 76px;
+      padding-bottom: 56px;
+    }
+  }
+
+  .form__fieldset-list {
+    &--border {
+      border: $line-separate-color solid 1px;
+      padding-top: 33px;
+      padding-left: 87px;
+    }
+
+    &--add {
+      display: flex;
+      flex-wrap: wrap;
+      padding-left: 0;
+      justify-content: space-between;
+    }
+  }
+
+  .form__fieldset-list-item {
+    margin-bottom: 30px;
+
+    &--check {
+      margin-bottom: 49px;
+    }
+  }
+
+  .form__fieldset-legend {
+    width: auto;
+    margin-left: 30px;
+    padding-left: 39px;
+    padding-right: 42px;
+  }
+
+  .form__input-icon {
+    right: 20px;
+  }
+
+  .form__button-wrapper {
+    display: flex;
+    padding-bottom: 55px;
+  }
+
+  .form__note {
+    font-size: 16px;
+    width: 290px;
+    // height: 36px;
+    padding-top: 12px;
+  }
+
+  .form__send-button {
+    width: 283px;
+    height: 52px;
+    font-size: 20px;
+    margin-right: 7px;
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .form__fieldset-wrapper {
+    display: flex;
+    // margin-bottom: 1px;
+  }
+
+  .form__fieldset {
+    padding-bottom: 76px;
+    &--no-border {
+      width: 570px;
+      margin-right: 80px;
+      padding-bottom: 0;
+    }
+
+    &--thin-border {
+      width: 570px;
+      padding-top: 0;
+      padding-bottom: 0;
+      margin-bottom: 80px;
+    }
+
+    &--contacts {
+      padding-bottom: 58px;
+    }
+
+    &--add {
+      padding-bottom: 20px;
+    }
+  }
+
+  .form__fieldset-list {
+    &--border {
+      padding-bottom: 3px;
+    }
+  }
+
+  .form__fieldset-legend {
+    margin-left: 70px;
+  }
+
+  .form__contact-wrapper {
+    display: flex;
+  }
+
+  .form__field-wrapper {
+    &--email {
+      width: 570px;
+      margin-right: 78px;
+    }
+
+    &--phone {
+      width: 570px;
+    }
+  }
+
+  .form__button-wrapper {
+    padding-bottom: 64px;
+  }
+
+  .form__send-button {
+    width: 570px;
+    max-width: none;
+    margin-right: 82px;
+  }
+
+  .form__note {
+    width: 570px;
+    text-align: left;
+  }
+}
