@@ -16,6 +16,14 @@
   background-repeat: no-repeat;
   flex-basis: 94px;
   text-align: center;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .page-footer__social {

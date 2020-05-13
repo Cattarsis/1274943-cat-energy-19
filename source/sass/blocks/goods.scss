@@ -45,17 +45,17 @@
   &::after {
     content: "";
     position: absolute;
-    // left: -20px;
+    left: -20px;
     bottom: 0;
     width: calc(100% + 40px);
-    margin: 0 -20px;
+    // margin: 0 -20px;
     height: 0;
     border-top: $line-separate-color solid 1px;
   }
 }
 
 .goods__wrapper {
-  padding-top: 41px;
+  padding-top: 42px;
 }
 
 .goods__promo-wrapper {
@@ -98,6 +98,7 @@
 
     &--border {
       margin-bottom: 76px;
+      border-top: $button-background-color solid 3px;
     }
   }
 
@@ -154,7 +155,6 @@
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     .goods__promo-wrapper {
       background-image: url("../img/gift-photo-tablet@2x.jpg");
-
     }
   }
 }
@@ -199,7 +199,7 @@
 
   .goods__wrapper {
     display: flex;
-    padding-top: 91px;
+    padding-top: 94px;
   }
 
   .goods__promo-wrapper {

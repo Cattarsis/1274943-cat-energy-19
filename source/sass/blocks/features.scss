@@ -96,6 +96,9 @@
       height: 80px;
     }
 
+    &--useful {
+      margin-bottom: 90px;
+    }
     // &::after {
     //   top: 15px;
     //   left: 16px;
@@ -135,6 +138,10 @@
 
   .features__item {
     width: 20%;
+
+    &--useful {
+      margin-bottom: 0;
+    }
   }
 
   .features__list {

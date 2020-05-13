@@ -27,6 +27,11 @@
   width: 50%;
 }
 
+.location__interactiv-map {
+  height: 362px;
+  width: auto;
+}
+
 .location__map {
   position: relative;
   height: 362px;
@@ -54,7 +59,7 @@
 
 @media (min-width: $width-tablet) {
   .location__wrapper {
-    padding: 64px 71px 59px;
+    padding: 64px 41px 59px;
   }
 
   .location__title {
@@ -71,6 +76,10 @@
 
     width: 170px;
     margin-left: auto;
+  }
+
+  .location__interactiv-map {
+    height: 396px;
   }
 
   .location__map {
@@ -102,11 +111,11 @@
 
   .location__wrapper {
     padding-left: 75px;
-    padding-right: 74px;
+    padding-right: 75px;
     position: absolute;
-    width: 570px;
-    min-width: 570px;
-    left: 110px;
+    width: 420px;
+    min-width: 420px;
+    left: 30px;
     top: 96px;
     z-index: 1;
 
@@ -117,6 +126,10 @@
 
   .location__address {
     text-align: left;
+  }
+
+  .location__interactiv-map {
+    height: 400px;
   }
 
   .location__map {

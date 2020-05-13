@@ -42,9 +42,9 @@
   }
 
   .page-header__wrapper {
-  //   display: flex;
-  //   justify-content: space-between;
-  margin-bottom: 4px;
+    //   display: flex;
+    //   justify-content: space-between;
+    margin-bottom: 4px;
   }
 
   .page-header__logo {
@@ -88,6 +88,14 @@
 
   .page-header__logo {
     padding-top: 53px;
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
   }
 
   .page-header__logo-image {

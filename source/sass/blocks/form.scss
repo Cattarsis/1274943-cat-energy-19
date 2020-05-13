@@ -37,7 +37,6 @@
       left: -20px;
       width: calc(100% + 40px);
       border-top: $line-separate-color solid 1px;
-
     }
 
     &::after {
@@ -47,7 +46,6 @@
       left: -20px;
       width: calc(100% + 40px);
       border-bottom: $line-separate-color solid 1px;
-
     }
   }
 
@@ -89,7 +87,8 @@
   margin-right: 13px;
   width: max-content;
 
-  &--email, &--phone {
+  &--email,
+  &--phone {
     display: flex;
     width: 100%;
     align-items: center;
@@ -99,6 +98,9 @@
 
 .form__input {
   display: inline-block;
+  box-shadow: none;
+  border-radius: 0;
+  appearance: none;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
@@ -111,27 +113,34 @@
   flex-grow: 1;
   border: rgba($metrics-border-color, 0.5) solid 1px;
 
-  &:hover {
-    border-color: $metrics-border-color;
-  }
-
-  &:active {
-    border-color: $main-font-color;
-
-    & + .form__input-icon {
-      color: $button-background-color;
-    }
-  }
-
-  &:required:invalid {
-    // border-color: #ff8282;
+  &--invalid {
+    border-color: #ff8282;
+    border-width: 2px;
 
     & + .form__input-icon {
       color: #ff8282;
     }
   }
 
-  &[type="tel"], &[type="email"] {
+  &:hover {
+    border-color: $metrics-border-color;
+
+    & + .form__input-icon {
+      color: $main-menu-text-color;
+    }
+  }
+
+  &:active {
+    border-color: $main-font-color;
+    border-width: 2px;
+
+    & + .form__input-icon {
+      color: $button-background-color;
+    }
+  }
+
+  &[type="tel"],
+  &[type="email"] {
     margin-left: 10px;
   }
 
@@ -140,6 +149,7 @@
     height: 150px;
     box-sizing: border-box;
     padding: 12px 10px 12px 15px;
+    resize: none;
   }
 }
 
@@ -169,12 +179,26 @@
     width: 17px;
     height: 13px;
     right: 15px;
+    top: 15px;
   }
 
   &--phone {
     right: 14px;
     height: 20px;
     width: 20px;
+    top: 15px;
+  }
+
+  &--invalid {
+    color: #ff8282;
+  }
+
+  &:hover {
+    color: $main-menu-text-color;
+  }
+
+  &:active {
+    color: $button-background-color;
   }
 }
 
@@ -195,7 +219,7 @@
     height: 52px;
     padding-left: 17px;
 
-    &[type="tel"]{
+    &[type="tel"] {
       margin-left: 14px;
       padding-left: 19px;
     }
@@ -279,6 +303,10 @@
 
   .form__input-icon {
     right: 20px;
+
+    &--mail {
+      top: 20px;
+    }
   }
 
   .form__button-wrapper {
@@ -309,6 +337,7 @@
 
   .form__fieldset {
     padding-bottom: 76px;
+
     &--no-border {
       width: 570px;
       margin-right: 80px;

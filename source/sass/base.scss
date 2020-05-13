@@ -18,6 +18,10 @@ br {
   display: none;
 }
 
+tbody {
+  display: block;
+}
+
 .container {
   padding-left: 20px;
   padding-right: 20px;
@@ -43,12 +47,15 @@ br {
   br {
     display: inline;
   }
-
 }
 
 @media (min-width: $width-desktop) {
   .container {
     max-width: 1280px;
+
+    &--location {
+      position: relative;
+    }
 
     &--form {
       padding-left: 30px;

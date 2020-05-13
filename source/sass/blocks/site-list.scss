@@ -18,6 +18,14 @@
   &:last-child {
     min-height: 65px;
   }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $width-tablet) {
@@ -56,8 +64,13 @@
     line-height: 25px;
     margin-left: 35px;
 
+    &--active {
+      border-color: $heading-font-inverse-color;
+    }
+
     &--black {
       color: $main-menu-text-color;
+      border-color: $button-background-color;
     }
   }
 

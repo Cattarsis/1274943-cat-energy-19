@@ -26,12 +26,22 @@
   }
 
   &:active {
-    color: rgba($heading-font-inverse-color, $alpha: .3);
+    color: rgba($heading-font-inverse-color, $alpha: 0.3);
   }
 
   &--gray {
     background-color: $alternate-background-color;
     color: $main-font-color;
+
+    &:hover {
+      background-color: #ebebeb;
+    }
+
+    &:active {
+      background-color: #ebebeb;
+      color: $main-font-color;
+      opacity: 0.3;
+    }
   }
 }
 
