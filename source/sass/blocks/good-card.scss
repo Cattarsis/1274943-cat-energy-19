@@ -95,6 +95,10 @@
       border: $line-separate-color solid 1px;
       // background-color: auto;
     }
+
+    & > a {
+      width: 100%;
+    }
   }
 
   .good-card__description-wrapper {

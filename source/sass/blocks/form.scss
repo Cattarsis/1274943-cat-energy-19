@@ -11,10 +11,10 @@
   border: none;
   border-top: $button-background-color solid 3px;
   padding: 0;
-  padding-top: 30px;
+  padding-top: 16px;
   margin: 0;
   // position: relative;
-  padding-bottom: 29px;
+  padding-bottom: 40px;
 
   &--no-border {
     border: none;
@@ -26,7 +26,7 @@
     position: relative;
     border: none;
     padding-bottom: 5px;
-    margin-bottom: 19px;
+    margin-bottom: 42px;
     // padding-top: 0;
     padding-top: 26px;
 
@@ -50,13 +50,13 @@
   }
 
   &--contacts {
-    padding-top: 41px;
-    padding-bottom: 17px;
+    padding-top: 15px;
+    padding-bottom: 28px;
   }
 
   &--add {
-    padding-top: 35px;
-    padding-bottom: 18px;
+    // padding-top: 22px;
+    padding-bottom: 17px;
   }
 }
 
@@ -66,10 +66,11 @@
   padding-right: 20px;
   // padding-top: 17px;
   line-height: 25px;
-  // position: relative;
-  // top: -17px;
+  position: relative;
+  top: -33px;
+  left: -20px;
   // top: 8px;
-  // background-color: #ffffff;
+  background-color: #ffffff;
 }
 
 .form__field-wrapper {
@@ -122,6 +123,10 @@
     }
   }
 
+  &:invalid {
+    appearance: none;
+  }
+
   &:hover {
     border-color: $metrics-border-color;
 
@@ -158,6 +163,10 @@
   padding-left: 46px;
   // padding-top: 26px;
   list-style: none;
+
+  &--add {
+    padding-top: 6px;
+  }
 }
 
 .form__fieldset-list-item {
@@ -165,7 +174,7 @@
 }
 
 .form__send-button {
-  margin-bottom: 18px;
+  margin-bottom: 17px;
 }
 
 .form__button-wrapper {
@@ -176,17 +185,17 @@
   position: absolute;
 
   &--mail {
-    width: 17px;
-    height: 13px;
+    width: 18px;
+    height: 14px;
     right: 15px;
-    top: 15px;
+    top: 16px;
   }
 
   &--phone {
-    right: 14px;
-    height: 20px;
-    width: 20px;
-    top: 15px;
+    right: 13px;
+    height: 21px;
+    width: 21px;
+    top: 12px;
   }
 
   &--invalid {
@@ -240,8 +249,8 @@
   }
 
   .form__fieldset {
-    padding-top: 75px;
-    padding-bottom: 74px;
+    padding-top: 61px;
+    padding-bottom: 85px;
 
     &--no-border {
       padding-bottom: 9px;
@@ -249,7 +258,7 @@
     }
 
     &--add {
-      padding-top: 66px;
+      padding-top: 46px;
       padding-bottom: 13px;
     }
 
@@ -257,7 +266,7 @@
       border: none;
       padding-top: 44px;
       padding-bottom: 3px;
-      margin-bottom: 85px;
+      margin-bottom: 95px;
 
       &::before,
       &::after {
@@ -266,8 +275,8 @@
     }
 
     &--contacts {
-      padding-top: 76px;
-      padding-bottom: 56px;
+      padding-top: 61px;
+      padding-bottom: 68px;
     }
   }
 
@@ -295,17 +304,27 @@
   }
 
   .form__fieldset-legend {
-    width: auto;
-    margin-left: 30px;
+    width: max-content;
+    // margin-left: 30px;
     padding-left: 39px;
     padding-right: 42px;
+    left: -40px;
+    top: -80px;
+
+    &--add{
+      top: -66px;
+    }
   }
 
   .form__input-icon {
-    right: 20px;
-
     &--mail {
-      top: 20px;
+      right: 20px;
+      top: 21px;
+    }
+
+    &--phone {
+      top: 17px;
+      right: 18px;
     }
   }
 
@@ -332,11 +351,11 @@
 @media (min-width: $width-desktop) {
   .form__fieldset-wrapper {
     display: flex;
-    // margin-bottom: 1px;
+    margin-bottom: 11px;
   }
 
   .form__fieldset {
-    padding-bottom: 76px;
+    padding-bottom: 87px;
 
     &--no-border {
       width: 570px;
@@ -352,7 +371,7 @@
     }
 
     &--contacts {
-      padding-bottom: 58px;
+      padding-bottom: 70px;
     }
 
     &--add {
@@ -367,11 +386,12 @@
   }
 
   .form__fieldset-legend {
-    margin-left: 70px;
+    margin-left: 0;
   }
 
   .form__contact-wrapper {
     display: flex;
+    flex-wrap: wrap;
   }
 
   .form__field-wrapper {

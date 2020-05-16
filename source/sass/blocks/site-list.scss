@@ -31,6 +31,7 @@
 @media (min-width: $width-tablet) {
   .site-list {
     display: flex;
+    flex-wrap: wrap;
     // width: 100%;
     justify-content: flex-end;
   }
@@ -51,7 +52,7 @@
     }
 
     &--active {
-      padding-bottom: 7px;
+      padding-bottom: 8px;
       border-bottom: $button-background-color solid 2px;
     }
   }
@@ -66,6 +67,7 @@
 
     &--active {
       border-color: $heading-font-inverse-color;
+      padding-bottom: 9px;
     }
 
     &--black {

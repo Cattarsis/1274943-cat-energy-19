@@ -5,7 +5,7 @@
   // background-size: contain;
   // background-position: center top 66px;
   position: relative;
-  border-bottom: $line-separate-color solid 1px;
+  // border-bottom: $line-separate-color solid 1px;
 }
 
 .page-header__logo {
@@ -45,6 +45,7 @@
     //   display: flex;
     //   justify-content: space-between;
     margin-bottom: 4px;
+    flex-wrap: nowrap;
   }
 
   .page-header__logo {
@@ -84,6 +85,7 @@
     // display: flex;
     // justify-content: space-between;
     margin-bottom: 25px;
+    flex-wrap: nowrap;
   }
 
   .page-header__logo {
