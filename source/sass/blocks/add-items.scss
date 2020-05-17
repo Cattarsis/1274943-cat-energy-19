@@ -30,12 +30,19 @@
 
 @media (min-width: $width-tablet) {
   .add-items {
-    padding: 25px 36px 27px 37px;
+    padding: 25px 36px 28px 37px;
     margin: 0;
     display: flex;
     flex-wrap: wrap;
     align-items: baseline;
     border: 1px solid $line-separate-color;
+    border-bottom: none;
+    // border-top: none;
+
+    &:first-child {
+      // border-top: 1px solid $line-separate-color;
+      padding-bottom: 27px;
+    }
   }
 
   .add-items__title {
@@ -70,6 +77,10 @@
     border-left: none;
     border-right: none;
     border-bottom: none;
+
+    &:first-child {
+      padding-bottom: 0;
+    }
 
     &:last-child {
       min-height: 73px;

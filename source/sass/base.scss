@@ -18,10 +18,6 @@ img {
   height: auto;
 }
 
-br {
-  display: none;
-}
-
 tbody {
   display: block;
 }
@@ -33,6 +29,10 @@ tbody {
   // max-width: 320px;
   min-width: 320px;
   box-sizing: border-box;
+
+  &--form {
+    position: relative;
+  }
 }
 
 @media (min-width: $width-tablet) {
@@ -46,10 +46,6 @@ tbody {
       padding-left: 70px;
       padding-right: 65px;
     }
-  }
-
-  br {
-    display: inline;
   }
 }
 

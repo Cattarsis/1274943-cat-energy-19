@@ -86,9 +86,11 @@
           </fieldset>
         </div>
         <fieldset class="form__fieldset form__fieldset--contacts">
+          <legend class="visually-hidden">Контактные данные
+            (владельца кота)</legend>
           <div class="form__contact-wrapper container container--form">
-            <legend class="form__fieldset-legend section-title">Контактные&nbsp;данные
-              (владельца кота)</legend>
+            <h3 class="form__fieldset-legend form__fieldset-legend--contact section-title">Контактные&nbsp;данные
+              (владельца кота)</h3>
 
             <p class="form__field-wrapper form__field-wrapper--email">
               <label class="form__label form__label--email" for="owner-email">E-mail:*
@@ -109,14 +111,17 @@
           </div>
         </fieldset>
         <fieldset class="form__fieldset">
+          <legend class="visually-hidden">Комментарий</legend>
           <div class="container container--form">
-            <legend class="form__fieldset-legend section-title">Комментарий</legend>
+            <h3 class="form__fieldset-legend form__fieldset-legend--comment section-title">Комментарий</h3>
+            <label class="visually-hidden" for="owner-comment">Расскажите обо всех повадках кота</label>
             <textarea class="form__input form__input--textarea" id="owner-comment" name="owner-comment" placeholder="Расскажите обо всех повадках кота"></textarea>
           </div>
         </fieldset>
         <fieldset class="form__fieldset form__fieldset--add">
+          <legend class="visually-hidden">Дополнительно</legend>
           <div class="container container--form">
-            <legend class="form__fieldset-legend form__fieldset-legend--add section-title">Дополнительно</legend>
+            <h3 class="form__fieldset-legend form__fieldset-legend--add section-title">Дополнительно</h3>
             <ul class="form__fieldset-list form__fieldset-list--add">
               <li class="form__fieldset-list-item form__fieldset-list-item--check checkbox">
                 <input class="checkbox__input visually-hidden" type="checkbox" id="add-shugar" name="add-shugar" checked>
@@ -150,11 +155,13 @@
             <p class="location__title">приглашаем
               к&nbsp;сотрудничеству
               дилеров!</p>
-            <address class="location__address">ул. Большая Конюшенная, д. 19/8
-                <br><br>Санкт-Петербург</address>
+            <address class="location__address">ул. Большая Конюшенная, д.&nbsp;19/8
+                <p class="location__address-city">
+                  Санкт-Петербург
+                </p></address>
           </div>
         </div>
-        <div id="map" class="location__interactiv-map"></div>
+        <div id="map" class="location__interactiv-map visually-hidden"></div>
         <div class="location__map">
           <picture>
             <source media="(min-width: 1280px)" type="image/webp" srcset="img/map-desktop@1x.webp 1x, img/map-desktop@2x.webp 2x">
@@ -206,7 +213,7 @@
         </a>
       </div>
     </footer>
-    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&onload=init&amp;apikey=7f4a39b4-52a0-4de1-bec3-b3d9778b20d6" type="text/javascript"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&onload=init&amp;apikey=7f4a39b4-52a0-4de1-bec3-b3d9778b20d6"></script>
     <script src="js/main.js"></script>
     <script src="js/picturefill.min.js"></script>
     <div style="display:none">

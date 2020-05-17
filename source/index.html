@@ -120,7 +120,7 @@
               <source media="(min-width: 1280px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
               <source media="(min-width: 768px)" type="image/webp" srcset="img/after-tablet@1x.webp 1x, img/after-tablet@2x.webp 2x">
               <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
-              <img class="example__image example__image--after example__image--hidden" src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" alt="Котик" width="320" height="240">
+              <img class="example__image example__image--after example__image--hidden" src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" alt="Котик стало">
             </picture>
             <picture>
               <source media="(min-width: 1280px)" type="image/webp" srcset="img/before-desktop@1x.webp 1x, img/before-desktop@2x.webp 2x">
@@ -128,7 +128,7 @@
               <source media="(min-width: 768px)" type="image/webp" srcset="img/before-tablet@1x.webp 1x, img/before-tablet@2x.webp 2x">
               <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
               <source type="image/webp" srcset="img/before-mobile@1x.webp 1x, img/before-mobile@2x.webp 2x">
-              <img class="example__image example__image--before" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" alt="Котик" width="320" height="240">
+              <img class="example__image example__image--before" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" alt="Котик было">
             </picture>
             <div class="example__progressbar">
               <span class="example__label example__label--before">Было</span>
@@ -144,16 +144,20 @@
       </section>
       <section class="location">
         <h2 class="visually-hidden">Контакты</h2>
-        <div class="container container--location">
-          <div class="location__wrapper">
-            <p class="location__title">приглашаем
-              к&nbsp;сотрудничеству
-              дилеров!</p>
-            <address class="location__address">ул. Большая Конюшенная, д. 19/8
-                <br><br>Санкт-Петербург</address>
+        <div class="location__background">
+          <div class="container container--location">
+            <div class="location__wrapper">
+              <p class="location__title">приглашаем
+                к&nbsp;сотрудничеству
+                дилеров!</p>
+              <address class="location__address">ул. Большая Конюшенная, д. 19/8
+                <p class="location__address-city">
+                  Санкт-Петербург
+                </p></address>
+            </div>
           </div>
         </div>
-        <div id="map" class="location__interactiv-map"></div>
+        <div id="map" class="location__interactiv-map visually-hidden"></div>
         <div class="location__map">
           <picture>
             <source media="(min-width: 1280px)" type="image/webp" srcset="img/map-desktop@1x.webp 1x, img/map-desktop@2x.webp 2x">
@@ -205,7 +209,7 @@
         </a>
       </div>
     </footer>
-    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&onload=init&amp;apikey=7f4a39b4-52a0-4de1-bec3-b3d9778b20d6" type="text/javascript"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&onload=init&amp;apikey=7f4a39b4-52a0-4de1-bec3-b3d9778b20d6"></script>
     <script src="js/main.js"></script>
     <script src="js/picturefill.min.js"></script>
     <div style="display: none">

@@ -1,5 +1,5 @@
 .goods {
-  border: none;
+  // border: none;
   border-top: $line-separate-color solid 1px;
 
   // display: flex;
@@ -38,7 +38,7 @@
 
 .goods__item {
   // border-bottom: $line-separate-color solid 1px;
-  padding-bottom: 24px;
+  padding-bottom: 25px;
   box-sizing: border-box;
   position: relative;
 
@@ -123,14 +123,15 @@
   }
 
   .goods__title {
-    top: -16px;
+    top: -26px;
     left: 28px;
     padding-right: 37px;
     padding-left: 39px;
   }
 
   .goods__wrapper {
-    padding-top: 91px;
+    position: relative;
+    padding-top: 90px;
   }
 
   .goods__promo-wrapper {
@@ -171,11 +172,13 @@
 
     &--border {
       margin-bottom: 18px;
+      border-top: $button-background-color solid 3px;
     }
   }
 
   .goods__title {
-    margin-left: 42px;
+    top: -25px;
+    left: -10px;
   }
 
   .goods__list {
@@ -198,8 +201,9 @@
   }
 
   .goods__wrapper {
+
     display: flex;
-    padding-top: 94px;
+    padding-top: 91px;
   }
 
   .goods__promo-wrapper {
