@@ -21,9 +21,31 @@
     padding-bottom: 11px;
   }
 
+  &:hover,
+  &:focus {
+    outline: none;
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    color: rgba($heading-font-inverse-color, $alpha: 0.3);
+  }
+
   &--gray {
     background-color: $alternate-background-color;
     color: $main-font-color;
+
+    &:hover,
+    &:focus {
+      outline: none;
+      background-color: #ebebeb;
+    }
+
+    &:active {
+      background-color: #ebebeb;
+      color: $main-font-color;
+      opacity: 0.3;
+    }
   }
 }
 
@@ -40,5 +62,11 @@
       padding-top: 16px;
       padding-bottom: 16px;
     }
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .button {
+    max-width: 245px;
   }
 }

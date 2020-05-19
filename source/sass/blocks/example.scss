@@ -18,6 +18,10 @@
 
 .example__image-wrapper {
   padding-top: 5px;
+  width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
 }
 
 .example__image {
@@ -45,7 +49,8 @@
 .example__bar-value {
   width: 49%;
   box-sizing: border-box;
-  border: 3px solid $button-background-color;
+  height: 6px;
+  background-color: $button-background-color;
   border-radius: 3px;
 }
 
@@ -55,6 +60,21 @@
   color: $heading-font-color;
   text-transform: uppercase;
   font-family: "Oswald", "Arial", sans-serif;
+  cursor: pointer;
+}
+
+@media (max-width: $width-tablet) {
+  .example__image {
+    &--hidden {
+      display: none;
+    }
+  }
+
+  .example__bar-value {
+    &--right {
+      margin-left: 51%;
+    }
+  }
 }
 
 @media (min-width: $width-tablet) {
@@ -62,8 +82,8 @@
     padding-top: 43px;
     background-color: transparent;
     border-top: $line-separate-color solid 1px;
-    padding-bottom: 69px;
-    background-image: linear-gradient(to bottom, transparent 619px, #f2f2f2 619px);
+    padding-bottom: 61px;
+    background-image: linear-gradient(to bottom, #ffffff 619px, #f2f2f2 619px);
   }
 
   .example__title {
@@ -71,59 +91,95 @@
   }
 
   .example__image {
-    width: 690px;
+    width: 100%;
     height: 517px;
     transform: translateX(15px);
     margin-bottom: 15px;
+
+    &--before {
+      position: absolute;
+      top: 24px;
+      left: 1px;
+      z-index: 1;
+      width: 690px;
+      clip: rect(0 338px auto 0);
+      background-image: linear-gradient(to bottom, #ffffff 169px, transparent 169px, transparent 369px, #f2f2f2 369px);
+    }
+
+    &--after {
+      display: inline-block;
+      position: relative;
+      width: 690px;
+    }
   }
 
   .example__image-wrapper {
-    width: 100%;
+    width: 708px;
     height: auto;
     padding-top: 23px;
+    padding-bottom: 7px;
     margin-bottom: 0;
+    position: relative;
   }
 
   .example__label {
+    box-sizing: border-box;
     font-size: 20px;
     padding-bottom: 6px;
     border-bottom: #e5e5e5 dotted 1px;
+
+    &:hover,
+    &:focus {
+      border-bottom: #e5e5e5 solid 1px;
+      outline: none;
+    }
+
+    &:active {
+      border-style: none;
+    }
   }
 
   .example__progressbar {
     padding-left: 69px;
     display: flex;
-    align-items: center;
   }
 
   .example__bar {
     width: 427px;
     border: none;
-    margin: 0 23px;
-    height: 10px;
+    margin: 8px 23px;
+    height: 6px;
     padding: 0;
-    background-color: transparent;
-    // padding-left: 211px;
-    // height: 6px;
-    // border-radius: 2.5px;
-    // vertical-align: middle;
-    // line-height: 20px;
+    position: relative;
+    background-color: $progressbar-color;
   }
 
   .example__bar-value {
-    background-color: $progressbar-color;
-    // border-color: $progressbar-color;
     border: none;
     position: relative;
-    border-width: 4px;
-    border-radius: 4px;
-    width: 100%;
-    height: 6px;
+    border-radius: 50%;
+    width: 34px;
+    height: 34px;
+    top: -15px;
+    left: calc(50.1% - 16px);
+
+    &:hover::before,
+    &:focus::before {
+      box-shadow: 0 3px 5px rgba(0, 0, 0, 0.25);
+      cursor: pointer;
+      outline: none;
+    }
+
+    &:active::before {
+      cursor: pointer;
+      top: -1px;
+      left: -1px;
+      box-shadow: 0 4px 5px rgba(0, 0, 0, 0.3);
+      border: $button-background-color solid 2px;
+    }
 
     &::before {
       content: "";
-      top: -15px;
-      left: calc(50% - 16px);
       position: absolute;
       background-color: $heading-font-inverse-color;
       border: $metrics-border-color solid 1px;
@@ -135,8 +191,8 @@
 
     &::after {
       content: "";
-      top: -2px;
-      left: calc(50% - 3px);
+      top: 13px;
+      left: 13px;
       position: absolute;
       width: 8px;
       height: 8px;
@@ -171,10 +227,23 @@
   .example__image-wrapper {
     width: 665px;
     padding-top: 5px;
+    margin-right: 0;
   }
 
   .example__image {
     margin-bottom: 37px;
+
+    &--before {
+      background-image: linear-gradient(to bottom, #ffffff 190px, #f2f2f2 190px);
+      position: absolute;
+      top: 5px;
+      left: 0;
+      clip: rect(0 365px auto 0);
+    }
+
+    &--after {
+      right: auto;
+    }
   }
 
   .example__progressbar {

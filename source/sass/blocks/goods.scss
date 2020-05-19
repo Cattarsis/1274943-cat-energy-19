@@ -1,42 +1,105 @@
 .goods {
-  border: none;
-  // display: flex;
-  // flex-direction: column;
+  border-top: $line-separate-color solid 1px;
   margin: 0;
-  // padding-left: 20px;
-  // padding-right: 20px;
   padding-top: 0;
+  margin-bottom: 42px;
+
+  &--border {
+    border-top: $button-background-color solid 3px;
+    position: relative;
+    margin-bottom: 34px;
+  }
+}
+
+.goods__title {
+  position: absolute;
+  margin: 0;
+  padding-left: 19px;
+  padding-right: 23px;
+  top: -17px;
+  left: 0;
+  background-color: #ffffff;
 }
 
 .goods__list {
   @include list-reset;
-  // display: flex;
-  // flex-direction: column;
+
+  &--add {
+    margin-bottom: 39px;
+  }
 }
 
 .goods__item {
-  // border-bottom: $line-separate-color solid 1px;
-  padding-bottom: 24px;
+  padding-bottom: 25px;
   box-sizing: border-box;
   position: relative;
 
   &::after {
     content: "";
     position: absolute;
-    // left: -20px;
+    left: -20px;
     bottom: 0;
     width: calc(100% + 40px);
-    margin: 0 -20px;
     height: 0;
     border-top: $line-separate-color solid 1px;
   }
 }
 
+.goods__wrapper {
+  padding-top: 41px;
+}
+
+.goods__promo-wrapper {
+  box-sizing: border-box;
+  padding-top: 65px;
+  padding-bottom: 43px;
+  text-align: center;
+  color: $heading-font-inverse-color;
+  background-color: #6fb346;
+  background-image: url("../img/gift-photo-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.goods__promo-icon {
+  margin-bottom: 57px;
+}
+
+.goods__promo-text {
+  font-size: 16px;
+  line-height: 1.25em;
+  padding: 0 59px;
+  margin: 0 auto;
+  width: 162px;
+}
+
+@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  .goods__promo-wrapper {
+    background-image: url("../img/gift-photo-mobile@2x.jpg");
+  }
+}
+
 @media (min-width: $width-tablet) {
+  .goods {
+    margin-bottom: 49px;
+    border-top: none;
+
+    &--border {
+      margin-bottom: 76px;
+      border-top: $button-background-color solid 3px;
+    }
+  }
+
   .goods__list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+
+    &--add {
+      flex-direction: column;
+      margin-bottom: 68px;
+    }
   }
 
   .goods__item {
@@ -47,19 +110,71 @@
       display: none;
     }
   }
+
+  .goods__title {
+    top: -26px;
+    left: 28px;
+    padding-right: 37px;
+    padding-left: 39px;
+  }
+
+  .goods__wrapper {
+    position: relative;
+    padding-top: 90px;
+  }
+
+  .goods__promo-wrapper {
+    background-image: url("../img/gift-photo-tablet@1x.jpg");
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 70px;
+  }
+
+  .goods__promo-icon {
+    margin-left: 91px;
+    margin-bottom: 5px;
+  }
+
+  .goods__promo-text {
+    text-align: left;
+    margin-left: 276px;
+    padding: 0;
+    width: 180px;
+  }
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    .goods__promo-wrapper {
+      background-image: url("../img/gift-photo-tablet@2x.jpg");
+    }
+  }
 }
 
 @media (min-width: $width-desktop) {
   .goods {
-    // width: 1220px;
-    // margin-left: auto;
-    // margin-right: auto;
     padding-left: 0;
     padding-right: 0;
+    margin-bottom: 54px;
+    border-top: none;
+
+    &--border {
+      margin-bottom: 18px;
+      border-top: $button-background-color solid 3px;
+    }
+  }
+
+  .goods__title {
+    top: -25px;
+    left: -10px;
   }
 
   .goods__list {
     justify-content: start;
+
+    &--add {
+      padding-top: 0;
+      width: 73.4%;
+      margin-right: 79px;
+    }
   }
 
   .goods__item {
@@ -68,6 +183,38 @@
 
     &:nth-child(4n) {
       margin-right: 0;
+    }
+  }
+
+  .goods__wrapper {
+
+    display: flex;
+    padding-top: 91px;
+  }
+
+  .goods__promo-wrapper {
+    display: block;
+    background-image: url("../../img/gift-photo-desktop@1x.jpg");
+    background-size: contain;
+    background-position: top;
+    width: 245px;
+    padding-bottom: 42px;
+    align-self: flex-start;
+  }
+
+  .goods__promo-icon {
+    margin-left: 3px;
+    margin-bottom: 56px;
+  }
+
+  .goods__promo-text {
+    margin-left: 33px;
+    text-align: center;
+  }
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    .goods__promo-wrapper {
+      background-image: url("../img/gift-photo-desktop@2x.jpg");
     }
   }
 }

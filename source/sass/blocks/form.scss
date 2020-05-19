@@ -1,0 +1,439 @@
+.form__note {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  width: 100%;
+}
+
+.form__fieldset {
+  border: none;
+  border-top: $button-background-color solid 3px;
+  padding: 0;
+  padding-top: 14px;
+  margin: 0;
+  padding-bottom: 40px;
+
+  &--no-border {
+    border: none;
+    padding-bottom: 9px;
+    padding-top: 0;
+  }
+
+  &--thin-border {
+    position: relative;
+    border: none;
+    padding-bottom: 5px;
+    margin-bottom: 42px;
+    padding-top: 26px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -20px;
+      width: calc(100% + 40px);
+      border-top: $line-separate-color solid 1px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: -20px;
+      width: calc(100% + 40px);
+      border-bottom: $line-separate-color solid 1px;
+    }
+  }
+
+  &--contacts {
+    padding-top: 12px;
+    padding-bottom: 28px;
+  }
+
+  &--add {
+    padding-bottom: 17px;
+  }
+}
+
+.form__fieldset-legend {
+  width: min-content;
+  margin: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  line-height: 25px;
+  position: relative;
+  display: inline-block;
+  top: -31px;
+  left: -21px;
+  background-color: #ffffff;
+
+  &--contact {
+    top: -30px;
+  }
+}
+
+.form__field-wrapper {
+  margin-top: 0;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.form__label {
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  font-family: $oswald;
+  margin-right: 13px;
+  width: max-content;
+
+  &--email,
+  &--phone {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin-right: 0;
+  }
+}
+
+.form__input {
+  display: inline-block;
+  box-shadow: none;
+  border-radius: 0;
+  appearance: none;
+  outline: none;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-family: $oswald;
+  box-sizing: border-box;
+  height: 45px;
+  padding-left: 13px;
+  width: 150px;
+  flex-basis: auto;
+  flex-grow: 1;
+  border: rgba($metrics-border-color, 0.5) solid 1px;
+
+  &--invalid {
+    border-color: #ff8282;
+    border-width: 2px;
+
+    & + .form__input-icon {
+      color: #ff8282;
+    }
+  }
+
+  &:invalid {
+    appearance: none;
+  }
+
+  &:hover,
+  &:focus {
+    border-color: $metrics-border-color;
+    outline: none;
+
+    & + .form__input-icon {
+      color: $main-menu-text-color;
+    }
+  }
+
+  &:focus {
+    border-color: $main-font-color;
+    border-width: 2px;
+
+    & + .form__input-icon {
+      color: $button-background-color;
+    }
+  }
+
+  &[type="tel"],
+  &[type="email"] {
+    margin-left: 10px;
+  }
+
+  &--textarea {
+    width: 100%;
+    height: 150px;
+    box-sizing: border-box;
+    padding: 9px 10px 12px 15px;
+    resize: none;
+  }
+}
+
+.form__fieldset-list {
+  margin: 0;
+  padding-left: 46px;
+  list-style: none;
+
+  &--add {
+    padding-top: 6px;
+  }
+}
+
+.form__fieldset-list-item {
+  margin-bottom: 22px;
+}
+
+.form__send-button {
+  margin-bottom: 17px;
+}
+
+.form__button-wrapper {
+  padding-bottom: 30px;
+}
+
+.form__input-icon {
+  position: absolute;
+
+  &--mail {
+    width: 18px;
+    height: 14px;
+    right: 15px;
+    top: 16px;
+  }
+
+  &--phone {
+    right: 13px;
+    height: 21px;
+    width: 21px;
+    top: 12px;
+  }
+
+  &--invalid {
+    color: #ff8282;
+  }
+
+  &:hover,
+  &:focus {
+    color: $main-menu-text-color;
+    outline: none;
+  }
+
+  &:active {
+    color: $button-background-color;
+  }
+}
+
+@media (min-width: $width-tablet) {
+  .form__label {
+    font-size: 20px;
+    line-height: 20px;
+    margin-right: 17px;
+
+    &--email,
+    &--phone {
+      margin-right: 0;
+    }
+  }
+
+  .form__input {
+    font-size: 20px;
+    height: 52px;
+    padding-left: 17px;
+
+    &[type="tel"] {
+      margin-left: 14px;
+      padding-left: 19px;
+    }
+
+    &[type="email"] {
+      margin-left: 19px;
+      padding-left: 21px;
+    }
+
+    &--textarea {
+      padding-top: 10px;
+      height: 174px;
+    }
+  }
+
+  .form__field-wrapper {
+    margin-bottom: 20px;
+  }
+
+  .form__fieldset {
+    padding-top: 53px;
+    padding-bottom: 85px;
+
+    &--no-border {
+      padding-bottom: 9px;
+      padding-top: 0;
+    }
+
+    &--add {
+      padding-top: 37px;
+      padding-bottom: 13px;
+    }
+
+    &--thin-border {
+      border: none;
+      padding-top: 44px;
+      padding-bottom: 3px;
+      margin-bottom: 95px;
+
+      &::before,
+      &::after {
+        display: none;
+      }
+    }
+
+    &--contacts {
+      padding-top: 55px;
+      padding-bottom: 68px;
+    }
+  }
+
+  .form__fieldset-list {
+    &--border {
+      border: $line-separate-color solid 1px;
+      padding-top: 33px;
+      padding-left: 87px;
+    }
+
+    &--add {
+      display: flex;
+      flex-wrap: wrap;
+      padding-left: 0;
+      justify-content: space-between;
+    }
+  }
+
+  .form__fieldset-list-item {
+    margin-bottom: 30px;
+
+    &--check {
+      margin-bottom: 49px;
+    }
+  }
+
+  .form__fieldset-legend {
+    display: inline-block;
+    width: max-content;
+    padding-left: 39px;
+    padding-right: 42px;
+    left: -40px;
+    top: -74px;
+
+    &--add {
+      top: -57px;
+    }
+  }
+
+  .form__input-icon {
+    &--mail {
+      right: 20px;
+      top: 21px;
+    }
+
+    &--phone {
+      top: 17px;
+      right: 18px;
+    }
+  }
+
+  .form__button-wrapper {
+    display: flex;
+    padding-bottom: 55px;
+  }
+
+  .form__note {
+    font-size: 16px;
+    width: 290px;
+    padding-top: 12px;
+  }
+
+  .form__send-button {
+    width: 283px;
+    height: 52px;
+    font-size: 20px;
+    margin-right: 7px;
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .form__fieldset-wrapper {
+    display: flex;
+    margin-bottom: 11px;
+  }
+
+  .form__fieldset {
+    padding-bottom: 87px;
+
+    &--no-border {
+      width: 570px;
+      margin-right: 80px;
+      padding-bottom: 0;
+    }
+
+    &--thin-border {
+      width: 570px;
+      padding-top: 0;
+      padding-bottom: 0;
+      margin-bottom: 80px;
+    }
+
+    &--contacts {
+      padding-top: 60px;
+      padding-bottom: 70px;
+    }
+
+    &--add {
+      padding-top: 38px;
+      padding-bottom: 20px;
+    }
+  }
+
+  .form__fieldset-list {
+    &--border {
+      padding-bottom: 3px;
+      padding-top: 34px;
+      padding-left: 86px;
+    }
+  }
+
+  .form__fieldset-legend {
+    margin-left: 0;
+
+    &--contact {
+      top: -82px;
+    }
+  }
+
+  .form__contact-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .form__field-wrapper {
+    &--email {
+      width: 570px;
+      margin-right: 78px;
+    }
+
+    &--phone {
+      width: 570px;
+    }
+  }
+
+  .form__button-wrapper {
+    padding-bottom: 64px;
+  }
+
+  .form__send-button {
+    width: 570px;
+    max-width: none;
+    margin-right: 82px;
+  }
+
+  .form__note {
+    width: 570px;
+    text-align: left;
+  }
+
+  .form__input {
+    &--textarea {
+      padding-top: 9px;
+      padding-left: 18px;
+    }
+  }
+}

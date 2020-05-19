@@ -2,7 +2,6 @@
   font-size: 14px;
   line-height: 18px;
   color: $main-font-color;
-  // margin: 0;
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: normal;
 
@@ -10,6 +9,10 @@
     color: $heading-font-inverse-color;
     line-height: 14px;
     text-align: center;
+    text-transform: uppercase;
+  }
+
+  &--black {
     text-transform: uppercase;
   }
 }
@@ -20,6 +23,12 @@
       color: $heading-font-color;
       font-size: 20px;
       line-height: 20px;
+      text-align: left;
+    }
+
+    &--black {
+      font-size: 20px;
+      line-height: 30px;
       text-align: left;
     }
   }

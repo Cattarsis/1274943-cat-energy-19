@@ -13,11 +13,11 @@
 }
 
 .option-table__cell {
+  display: block;
   font-size: 12px;
   line-height: 15px;
   color: $main-font-color;
   font-family: "ArialMT", sans-serif;
-  // border: red solid 1px;
 
   &--right {
     text-align: right;
@@ -30,7 +30,6 @@
   }
 
   .option-table__row {
-    // height: 31px;
     padding-top: 7px;
     padding-bottom: 6px;
     border-bottom: $line-separate-color solid 1px;
