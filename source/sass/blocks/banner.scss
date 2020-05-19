@@ -1,8 +1,4 @@
 .banner {
-  // padding-top: 1px;
-  // background-image: url("../img/index-background-mobile@1x.jpg");
-  // background-repeat: no-repeat;
-  // background-position: top left -10px;
   position: relative;
 
   padding-top: 27px;
@@ -15,7 +11,6 @@
     left: -20px;
     display: block;
     background-image: url("../img/index-background-mobile@1x.jpg");
-    //,linear-gradient(to bottom, #65a93c);
     background-repeat: no-repeat;
     background-size: 320px 305px;
     background-position: center top;
@@ -26,8 +21,6 @@
 }
 
 .banner__title {
-  // margin-top: 0;
-  // margin-bottom: 25px;
   margin: 0 auto 25px;
   min-height: 72px;
   max-width: 280px;
@@ -35,14 +28,11 @@
 
 .banner__contain {
   margin-bottom: 28px;
-  //   margin-left: 35px;
-  //   margin-right: 35px;
 }
 
 .banner__image {
   display: block;
   margin-bottom: 4px;
-  // text-align: center;
   margin-left: auto;
   margin-right: auto;
 }
@@ -57,9 +47,6 @@
 
 @media (min-width: $width-tablet) {
   .banner {
-    // background-image: url("../img/index-can-tablet@1x.jpg");
-    // background-repeat: no-repeat;
-    // background-position: bottom;
     position: relative;
     min-height: 810px;
     padding-left: 87px;
@@ -82,7 +69,6 @@
 
   .banner__title {
     color: $heading-font-color;
-    // margin-top: 48px;
     max-width: 530px;
     margin: 0;
     margin-bottom: 41px;
@@ -97,15 +83,11 @@
 
 @media (min-width: $width-desktop) {
   .banner {
-    // background-image: url("../img/index-can-desktop@1x.png");
-    // background-position: top  left 67.5%;
     box-sizing: border-box;
     min-height: 554px;
     padding-left: 81px;
     padding-right: 0;
     padding-top: 80px;
-    // margin-left: 110px;
-    // margin-right: 110px;
     width: auto;
   }
 
@@ -119,8 +101,6 @@
 
   .banner__title {
     width: 420px;
-    // margin-top: 78px;
-    // margin-left: 81px;
   }
 
   .banner__contain {

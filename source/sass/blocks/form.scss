@@ -3,7 +3,6 @@
   font-size: 14px;
   line-height: 16px;
   text-align: center;
-  // margin: 0 auto;
   width: 100%;
 }
 
@@ -13,7 +12,6 @@
   padding: 0;
   padding-top: 14px;
   margin: 0;
-  // position: relative;
   padding-bottom: 40px;
 
   &--no-border {
@@ -27,7 +25,6 @@
     border: none;
     padding-bottom: 5px;
     margin-bottom: 42px;
-    // padding-top: 0;
     padding-top: 26px;
 
     &::before {
@@ -55,7 +52,6 @@
   }
 
   &--add {
-    // padding-top: 22px;
     padding-bottom: 17px;
   }
 }
@@ -65,13 +61,11 @@
   margin: 0;
   padding-left: 20px;
   padding-right: 20px;
-  // padding-top: 17px;
   line-height: 25px;
   position: relative;
   display: inline-block;
   top: -31px;
   left: -21px;
-  // top: 8px;
   background-color: #ffffff;
 
   &--contact {
@@ -110,7 +104,6 @@
   appearance: none;
   outline: none;
   font-size: 16px;
-  // line-height: 18px;
   text-transform: uppercase;
   font-family: $oswald;
   box-sizing: border-box;
@@ -134,8 +127,10 @@
     appearance: none;
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     border-color: $metrics-border-color;
+    outline: none;
 
     & + .form__input-icon {
       color: $main-menu-text-color;
@@ -162,23 +157,12 @@
     box-sizing: border-box;
     padding: 9px 10px 12px 15px;
     resize: none;
-
-    // &::placeholder {
-    //   padding-top: 4px;
-    // }
   }
-
-  // &::placeholder {
-  //   // padding-top: 3px;
-  //   // font-size: 16px;
-  //   // line-height: 18px;
-  // }
 }
 
 .form__fieldset-list {
   margin: 0;
   padding-left: 46px;
-  // padding-top: 26px;
   list-style: none;
 
   &--add {
@@ -219,8 +203,10 @@
     color: #ff8282;
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: $main-menu-text-color;
+    outline: none;
   }
 
   &:active {
@@ -323,13 +309,12 @@
   .form__fieldset-legend {
     display: inline-block;
     width: max-content;
-    // margin-left: 30px;
     padding-left: 39px;
     padding-right: 42px;
     left: -40px;
     top: -74px;
 
-    &--add{
+    &--add {
       top: -57px;
     }
   }
@@ -354,7 +339,6 @@
   .form__note {
     font-size: 16px;
     width: 290px;
-    // height: 36px;
     padding-top: 12px;
   }
 
@@ -374,7 +358,6 @@
 
   .form__fieldset {
     padding-bottom: 87px;
-    // padding-top: 52px;
 
     &--no-border {
       width: 570px;

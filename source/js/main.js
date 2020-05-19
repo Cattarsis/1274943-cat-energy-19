@@ -120,8 +120,8 @@ function mDown(e) {
   }
 
 function mUp() {
-    isDown = false;
- }
+  isDown = false;
+}
 
 function mMove(e) {
   event.preventDefault();
@@ -134,5 +134,5 @@ function mMove(e) {
 
     barPoint.style.left = 'calc('+ percent + '% - 16px)';
     beforeImage.style.clip = 'rect(0 '+(beforeImage.clientWidth - beforeImage.clientWidth * percent / 100) + 'px auto 0)';
- }
+  }
 }

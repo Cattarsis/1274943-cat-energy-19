@@ -21,7 +21,9 @@
     padding-bottom: 11px;
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
+    outline: none;
     background-color: #5eaa2f;
   }
 
@@ -33,7 +35,9 @@
     background-color: $alternate-background-color;
     color: $main-font-color;
 
-    &:hover {
+    &:hover,
+    &:focus {
+      outline: none;
       background-color: #ebebeb;
     }
 

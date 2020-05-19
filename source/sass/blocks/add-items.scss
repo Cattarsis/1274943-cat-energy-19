@@ -37,10 +37,8 @@
     align-items: baseline;
     border: 1px solid $line-separate-color;
     border-bottom: none;
-    // border-top: none;
 
     &:first-child {
-      // border-top: 1px solid $line-separate-color;
       padding-bottom: 27px;
     }
   }
@@ -53,7 +51,6 @@
   .add-items__option {
     margin-left: auto;
     margin-bottom: 22px;
-    // width: 35.6%;
   }
 
   .add-items__item {

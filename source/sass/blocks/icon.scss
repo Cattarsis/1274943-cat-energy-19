@@ -1,29 +1,14 @@
 .icon {
-  color: #666666;
-
-  &:hover {
+  &:hover,
+  &:focus {
     color: $button-background-color;
+    outline: none;
   }
 
   &:active {
     color: $button-background-color;
     opacity: 0.3;
   }
-
-  // &--vkontakte {
-  //   width: 30px;
-  //   height: 19px;
-  // }
-
-  // &--instagram {
-  //   width: 20px;
-  //   height: 17px;
-  // }
-
-  // &--facebook {
-  //   width: 14px;
-  //   height: 36px;
-  // }
 }
 
 @media (min-width: $width-tablet) {

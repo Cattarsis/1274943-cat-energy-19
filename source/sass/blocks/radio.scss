@@ -25,21 +25,22 @@
     top: 7px;
   }
 
-  &:hover {
-    &:before {
+  &:hover,
+  &:focus {
+    &::before {
       border-color: #bababa;
     }
   }
 
   &:active {
-    color: rgba($main-menu-text-color, .3);
+    color: rgba($main-menu-text-color, 0.3);
 
-    &:before {
-      border-color: rgba(#bababa, $alpha: .3);
+    &::before {
+      border-color: rgba(#bababa, $alpha: 0.3);
     }
 
-    &:after {
-      border-color: rgba($button-background-color, $alpha: .3);
+    &::after {
+      border-color: rgba($button-background-color, $alpha: 0.3);
     }
   }
 }
@@ -47,6 +48,10 @@
 .radio__input {
   &:checked + .radio__label::after {
     content: "";
+  }
+
+  &:focus + .radio__label::before {
+    border-color: #bababa;
   }
 }
 
