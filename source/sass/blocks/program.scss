@@ -17,8 +17,6 @@
   line-height: 16px;
   color: $heading-font-color;
   text-decoration: none;
-  // margin-top: 20px;
-  // margin-bottom: 10px;
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: normal;
 
@@ -31,6 +29,19 @@
     background-repeat: no-repeat;
     width: 25px;
     height: 12px;
+  }
+
+  &:hover::after,
+  &:focus::after,
+  &:active::after {
+    background-image: url("../../img/icon-right-arrow-verylong.svg");
+    right: -45px;
+    width: 34px;
+    outline: none;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
@@ -138,6 +149,13 @@
       top: 10px;
       right: -47px;
     }
+
+    &:hover::after,
+    &:focus::after,
+    &:active::after {
+      right: -56px;
+      outline: none;
+    }
   }
 }
 
@@ -163,7 +181,6 @@
 
     &::before {
       left: -163px;
-      // right: 5px;
       top: -29px;
       border-width: 50px;
     }
@@ -190,6 +207,13 @@
     &::after {
       top: 8px;
       right: -49px;
+    }
+
+    &:hover::after,
+    &:focus::after,
+    &:active::after {
+      right: -58px;
+      outline: none;
     }
   }
 }

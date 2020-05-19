@@ -1,0 +1,141 @@
+.location__wrapper {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  z-index: 1;
+  padding-top: 28px;
+  padding-bottom: 26px;
+  background-color: $heading-font-inverse-color;
+
+  &--alt-bg {
+    background-color: $alternate-background-color;
+  }
+}
+
+.location__background {
+  background-color: $heading-font-inverse-color;
+}
+
+.location__title {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.25em;
+  text-transform: uppercase;
+  color: $heading-font-color;
+  font-family: "oswald", "Arial", sans-serif;
+  width: 45%;
+  max-width: 140px;
+}
+
+.location__address {
+  font-style: normal;
+  line-height: 20px;
+  width: 50%;
+  max-width: 140px;
+}
+
+.location__address-city {
+  padding: 0;
+  margin: 0;
+}
+
+.location__interactiv-map {
+  height: 362px;
+  width: auto;
+}
+
+.location__map {
+  position: relative;
+  height: 362px;
+  z-index: -1;
+}
+
+.location__map-image {
+  width: 100%;
+  transform: translateY(-38px);
+  object-fit: cover;
+  object-position: center;
+}
+
+@media (min-width: $width-tablet) {
+  .location__wrapper {
+    padding: 64px 41px 59px;
+  }
+
+  .location__title {
+    font-size: 20px;
+    width: min-content;
+  }
+
+  .location__address {
+    font-size: 16px;
+    line-height: 1.25em;
+    text-align: right;
+    margin-top: -3px;
+
+    width: 170px;
+    max-width: none;
+    margin-left: auto;
+  }
+
+  .location__address-city {
+    margin-top: 20px;
+  }
+
+  .location__interactiv-map {
+    height: 396px;
+  }
+
+  .location__map {
+    height: 396px;
+  }
+
+  .location__map-image {
+    height: 400px;
+    transform: translateY(-4px);
+
+    object-position: 100% center;
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .location {
+    position: relative;
+  }
+
+  .location__wrapper {
+    padding-left: 75px;
+    padding-right: 75px;
+    position: absolute;
+    width: 420px;
+    min-width: 420px;
+    left: 30px;
+    top: 96px;
+    z-index: 1;
+
+    &--alt-bg {
+      background-color: $heading-font-inverse-color;
+    }
+  }
+
+  .location__address {
+    text-align: left;
+  }
+
+  .location__interactiv-map {
+    height: 400px;
+  }
+
+  .location__map {
+    height: 400px;
+
+    &::after {
+      left: calc(75% - 82px);
+    }
+  }
+
+  .location__map-image {
+    height: 400px;
+    transform: none;
+  }
+}

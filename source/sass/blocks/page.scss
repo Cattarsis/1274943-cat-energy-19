@@ -1,0 +1,13 @@
+.page {
+  &--border {
+    border-top: $line-separate-color solid 1px;
+  }
+}
+
+@media (min-width: $width-tablet) {
+  .page {
+    &--border {
+      border-top: none;
+    }
+  }
+}

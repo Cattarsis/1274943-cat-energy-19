@@ -12,28 +12,58 @@ body {
 a {
   text-decoration: none;
   color: inherit;
+  outline: none;
+}
+
+svg {
+  color: inherit;
+}
+
+img {
+  height: auto;
+}
+
+tbody {
+  display: block;
 }
 
 .container {
   padding-left: 20px;
   padding-right: 20px;
   margin: 0 auto;
-  // max-width: 320px;
   min-width: 320px;
   box-sizing: border-box;
+
+  &--form {
+    position: relative;
+  }
 }
 
 @media (min-width: $width-tablet) {
   .container {
     padding-left: 30px;
     padding-right: 30px;
-    min-width: 765px;
+    min-width: 768px;
     max-width: 900px;
+
+    &--form {
+      padding-left: 70px;
+      padding-right: 65px;
+    }
   }
 }
 
 @media (min-width: $width-desktop) {
   .container {
     max-width: 1280px;
+
+    &--location {
+      position: relative;
+    }
+
+    &--form {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
   }
 }
