@@ -1,9 +1,9 @@
 var buttonMenu = document.querySelector('.main-nav__toggle');
-var interactiveMap = document.querySelector('.location__interactiv-map');
+var interactiveMap = document.querySelector('.location__interactive-map');
 
-if (interactiveMap){
+//if (interactiveMap){
   interactiveMap.classList.remove('visually-hidden');
-}
+//}
 
 var menu = document.querySelector('.main-nav__wrapper');
 

@@ -140,6 +140,7 @@
   &:focus {
     border-color: $main-font-color;
     border-width: 2px;
+    padding-left: 12px;
 
     & + .form__input-icon {
       color: $button-background-color;
@@ -155,9 +156,23 @@
     width: 100%;
     height: 150px;
     box-sizing: border-box;
-    padding: 9px 10px 12px 15px;
+    padding: 9px 8px 12px 15px;
     resize: none;
+    overflow: auto;
+
+    &:focus {
+      padding-left: 14px;
+      padding-top: 8px;
+    }
   }
+}
+
+.form__input::-ms-clear {
+  display: none;
+}
+
+.form__input::-ms-reveal {
+  display: none;
 }
 
 .form__fieldset-list {
@@ -231,19 +246,36 @@
     height: 52px;
     padding-left: 17px;
 
+
+    &:focus {
+      padding-left: 16px;
+    }
+
     &[type="tel"] {
       margin-left: 14px;
       padding-left: 19px;
+
+      &:focus {
+        padding-left: 18px;
+      }
     }
 
     &[type="email"] {
       margin-left: 19px;
       padding-left: 21px;
+
+      &:focus {
+        padding-left: 20px;
+      }
     }
 
     &--textarea {
       padding-top: 10px;
       height: 174px;
+
+      &:focus {
+        padding-top: 9px;
+      }
     }
   }
 
@@ -294,7 +326,7 @@
       display: flex;
       flex-wrap: wrap;
       padding-left: 0;
-      justify-content: space-between;
+      justify-content: flex-start;
     }
   }
 
@@ -303,6 +335,11 @@
 
     &--check {
       margin-bottom: 49px;
+      width: 344px;
+
+      &:nth-child(2n) {
+        width: 289px;
+      }
     }
   }
 
@@ -354,6 +391,7 @@
   .form__fieldset-wrapper {
     display: flex;
     margin-bottom: 11px;
+    padding-bottom: 61px;
   }
 
   .form__fieldset {
@@ -369,7 +407,7 @@
       width: 570px;
       padding-top: 0;
       padding-bottom: 0;
-      margin-bottom: 80px;
+      margin-bottom: 0;
     }
 
     &--contacts {
@@ -388,6 +426,16 @@
       padding-bottom: 3px;
       padding-top: 34px;
       padding-left: 86px;
+    }
+  }
+
+  .form__fieldset-list-item {
+    &--check {
+      width: 325px;
+
+      &:nth-child(4n) {
+        width: 245px;
+      }
     }
   }
 
@@ -434,6 +482,11 @@
     &--textarea {
       padding-top: 9px;
       padding-left: 18px;
+
+      &:focus {
+        padding-left: 17px;
+        padding-top: 8px;
+      }
     }
   }
 }
