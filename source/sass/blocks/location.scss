@@ -39,7 +39,7 @@
   margin: 0;
 }
 
-.location__interactiv-map {
+.location__interactive-map {
   height: 362px;
   width: auto;
 }
@@ -48,6 +48,7 @@
   position: relative;
   height: 362px;
   z-index: -1;
+  overflow: hidden;
 }
 
 .location__map-image {
@@ -82,7 +83,7 @@
     margin-top: 20px;
   }
 
-  .location__interactiv-map {
+  .location__interactive-map {
     height: 396px;
   }
 
@@ -93,6 +94,7 @@
   .location__map-image {
     height: 400px;
     transform: translateY(-4px);
+    content: url("../img/map-tablet@1x.png");
 
     object-position: 100% center;
   }
@@ -122,7 +124,7 @@
     text-align: left;
   }
 
-  .location__interactiv-map {
+  .location__interactive-map {
     height: 400px;
   }
 

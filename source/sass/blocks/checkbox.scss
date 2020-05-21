@@ -60,9 +60,9 @@
 
 @media (min-width: $width-tablet) {
   .checkbox {
-    width: 289px;
     box-sizing: border-box;
     padding-left: 58px;
+    padding-right: 10px;
   }
 
   .checkbox__label {
@@ -80,11 +80,5 @@
       left: -48px;
       top: 8px;
     }
-  }
-}
-
-@media (min-width: $width-desktop) {
-  .checkbox {
-    width: 245px;
   }
 }

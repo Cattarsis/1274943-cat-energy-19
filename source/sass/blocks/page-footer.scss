@@ -27,11 +27,11 @@
 }
 
 .page-footer__social {
-  flex-basis: 62px;
+  width: 62px;
   border-top: $line-separate-color solid 1px;
   border-bottom: $line-separate-color solid 1px;
   padding-left: 73px;
-  padding-right: 82px;
+  padding-right: 73px;
 }
 
 .page-footer__copyright {
@@ -46,7 +46,7 @@
   .page-footer__wrapper {
     flex-direction: row;
     justify-content: space-between;
-    padding-top: 56px;
+    padding-top: 51px;
     padding-bottom: 58px;
   }
 
@@ -56,7 +56,8 @@
   }
 
   .page-footer__social {
-    flex-basis: 124px;
+    width: 282px;
+    box-sizing: border-box;
     border: none;
     padding-left: 76px;
   }

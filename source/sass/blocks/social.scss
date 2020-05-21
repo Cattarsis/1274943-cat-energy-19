@@ -8,6 +8,13 @@
   justify-content: space-between;
   align-items: center;
   flex-grow: 1;
+  flex-wrap: wrap;
+}
+
+.social__item {
+  margin: 5px 9px 5px 0;
+  flex-grow: 0;
+  flex-shrink: 0;
 }
 
 .social__link {
